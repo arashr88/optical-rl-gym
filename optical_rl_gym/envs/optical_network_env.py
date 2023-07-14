@@ -173,7 +173,8 @@ class OpticalNetworkEnv(gym.Env):
         return src, src_id, dst, dst_id
 
     def observation(self):
-        return {"topology": self.topology, "service": self.current_service}
+        # return {"topology": self.topology, "service": self.current_service}
+        return {"topology": self.topology, "current_service": self.current_service}
 
     def reward(self):
         return 1 if self.current_service.accepted else 0

@@ -65,8 +65,8 @@ def start_environment(env: "OpticalNetworkEnv", steps: int) -> "OpticalNetworkEn
         if done:
             env.reset()
         while not done:
-            action = env.action_space.sample()
-            _, _, done, _ = env.step(action)
+            action = env.action_space.sample() #?
+            _, _, done, _ = env.step(action) #?
     return env
 
 
@@ -117,7 +117,7 @@ def evaluate_heuristic(
         episode_length = 0
         while not done:
             action = heuristic(env)
-            _, reward, done, _ = env.step(action)
+            _, reward, done, _, _ = env.step(action)
             episode_reward += reward
             if callback is not None:
                 callback(locals(), globals())

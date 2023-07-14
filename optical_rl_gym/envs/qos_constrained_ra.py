@@ -150,6 +150,7 @@ class QoSConstrainedRA(OpticalNetworkEnv):
             self.observation(),
             reward,
             self.episode_services_processed == self.episode_length,
+            False,
             info,
         )
 

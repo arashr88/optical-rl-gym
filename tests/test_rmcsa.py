@@ -29,7 +29,7 @@ policies = []
 # topology_name = 'germany50'
 with open(
     os.path.join(
-        "..", "examples", "topologies", "nsfnet_chen_5-paths_6-modulations.h5"
+        "examples", "topologies", "nsfnet_chen_5-paths_6-modulations.h5"
     ),
     "rb",
 ) as f:
