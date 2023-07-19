@@ -33,8 +33,8 @@ class RMSAEnv(OpticalNetworkEnv):
         load: float = 10,
         mean_service_holding_time: float = 10800.0,
         num_spectrum_resources: int = 100,
-        bit_rate_selection: str = "continuous",
-        bit_rates: Sequence = [10, 40, 100],
+        bit_rate_selection: str = "discrete",
+        bit_rates: Sequence = [450, 100],
         bit_rate_probabilities: Optional[np.array] = None,
         node_request_probabilities: Optional[np.array] = None,
         bit_rate_lower_bound: float = 25.0,
@@ -58,7 +58,6 @@ class RMSAEnv(OpticalNetworkEnv):
 
         # make sure that modulations are set in the topology
         assert "modulations" in self.topology.graph
-
         # asserting that the bit rate selection and parameters are correctly set
         assert bit_rate_selection in ["continuous", "discrete"]
         assert (bit_rate_selection == "continuous") or (
@@ -210,7 +209,6 @@ class RMSAEnv(OpticalNetworkEnv):
 
         if not self.current_service.accepted:
             self.actions_taken[self.k_paths, self.num_spectrum_resources] += 1
-
         self.topology.graph["services"].append(self.current_service)
 
         # generating statistics for the episode info
@@ -575,7 +573,6 @@ class RMSAEnv(OpticalNetworkEnv):
 
         self.services_processed += 1
         self.episode_services_processed += 1
-
         # registering statistics about the bit rate requested
         self.bit_rate_requested += self.current_service.bit_rate
         self.episode_bit_rate_requested += self.current_service.bit_rate
@@ -643,6 +640,18 @@ class RMSAEnv(OpticalNetworkEnv):
                 [
                     self.topology[path.node_list[i]][path.node_list[i + 1]]["id"]
                     for i in range(len(path.node_list) - 1)
+                ],
+                :,
+            ],
+        )
+        return available_slots
+    
+    def get_available_slots_link(self, path: Path, Id_1, Id_2):
+        available_slots = functools.reduce(
+            np.multiply,
+            self.topology.graph["available_slots"][
+                [
+                    self.topology[path.node_list[Id_1]][path.node_list[Id_2]]["id"]
                 ],
                 :,
             ],
@@ -803,6 +812,41 @@ def least_loaded_path_first_fit(env: RMSAEnv) -> Tuple[int, int]:
                 break  # breaks the loop for the initial slot
     return action
 
+def least_congested_path_first_fit(env: RMSAEnv) -> Tuple[int, int]:
+    max_free_slots = 0
+    action = (
+        env.topology.graph["k_paths"],
+        env.topology.graph["num_spectrum_resources"],
+    )
+    min_hop = env.k_shortest_paths[env.current_service.source, env.current_service.destination][0].hops
+    ini_slot = -1
+    pathID_ = -1
+    selectedPath = None
+    for idp, path in enumerate(
+        env.k_shortest_paths[
+            env.current_service.source, env.current_service.destination
+        ]
+    ):
+        if path.hops <= min_hop + 1 and ini_slot != env.topology.graph["num_spectrum_resources"]:
+                env.topology.graph["num_spectrum_resources"] 
+                no_free_path = 1000000
+                for nodei in range(path.hops):
+                    linksFreeSlots = np.sum(env.get_available_slots_link(path, nodei, nodei+1))
+                    if  linksFreeSlots < no_free_path:
+                        no_free_path = linksFreeSlots
+                if no_free_path > ini_slot:
+                    ini_slot = no_free_path
+                    pathID_ = idp
+                    selectedPath = path
+    num_slots = env.get_number_slots(selectedPath)
+    for initial_slot in range(
+        0, env.topology.graph["num_spectrum_resources"] - num_slots
+    ):
+        if env.is_path_free(selectedPath, initial_slot, num_slots):
+            action = (pathID_, initial_slot)
+            break  # breaks the loop for the initial slot
+    
+    return action
 
 class SimpleMatrixObservation(gym.ObservationWrapper):
     def __init__(self, env: RMSAEnv):
