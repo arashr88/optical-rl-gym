@@ -108,25 +108,35 @@ def evaluate_heuristic(
     callback=None,
     reward_threshold=None,
     return_episode_rewards=False,
+    seeds=None,
 ):
     episode_rewards, episode_lengths = [], []
-    for _ in range(n_eval_episodes):
+    blocking = []
+    BW_blocking = []
+    for cnt in range(n_eval_episodes):
         _ = env.reset()
+        env.rand_seed = 1#seeds[cnt] 
         done, _ = False, None
         episode_reward = 0.0
         episode_length = 0
         while not done:
             action = heuristic(env)
-            _, reward, done, _, _ = env.step(action)
+            _, reward, done, _, info = env.step(action)
             episode_reward += reward
             if callback is not None:
                 callback(locals(), globals())
             episode_length += 1
             if render:
                 env.render()
+            if done:
+                # print(info)
+                blocking.append(info['service_blocking_rate'])
+                BW_blocking.append(info['bit_rate_blocking_rate'])
         episode_rewards.append(episode_reward)
         episode_lengths.append(episode_length)
-
+    
+    mean_blocking = np.mean(blocking)
+    mean_BW_blocking = np.mean(BW_blocking)
     mean_reward = np.mean(episode_rewards)
     std_reward = np.std(episode_rewards)
 
@@ -138,4 +148,4 @@ def evaluate_heuristic(
         )
     if return_episode_rewards:
         return episode_rewards, episode_lengths
-    return mean_reward, std_reward
+    return mean_reward, std_reward, mean_blocking, mean_BW_blocking
