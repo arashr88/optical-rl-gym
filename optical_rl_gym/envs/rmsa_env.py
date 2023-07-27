@@ -161,7 +161,7 @@ class RMSAEnv(OpticalNetworkEnv):
 
     def step(self, action):
         path, initial_slot = action[0], action[1]
-
+        self._release()
         # registering overall statistics
         self.actions_output[path, initial_slot] += 1
         previous_network_compactness = (
@@ -593,7 +593,15 @@ class RMSAEnv(OpticalNetworkEnv):
             else:  # release is not to be processed yet
                 self._add_release(service_to_release)  # puts service back in the queue
                 break  # breaks the loop
-
+    
+    def _release(self):
+        while len(self._events) > 0:
+            (time, service_to_release) = heapq.heappop(self._events)
+            if time <= self.current_time:
+                self._release_path(service_to_release)
+            else:  # release is not to be processed yet
+                self._add_release(service_to_release)  # puts service back in the queue
+                break  # breaks the loop
     def _get_path_slot_id(self, action: int) -> Tuple[int, int]:
         """
         Decodes the single action index into the path index and the slot index to be used.
