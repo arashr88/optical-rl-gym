@@ -37,8 +37,8 @@ with open(
     
     
 logging.getLogger("rlrmsaenv").setLevel(logging.INFO)
-load = 350
-seed = 20
+load = 1000
+seed = 3000
 episodes = 10
 episode_length = 100000
 num_spatial_resources = 7
@@ -72,7 +72,7 @@ for seeds_cnt in range(episodes):
     )
     seeds = [seeds_cnt]
     print("STR".ljust(5), "REW".rjust(7), "STD".rjust(7))
-
+    print("Erlang:", load, "    seed:  ", seeds_cnt)
     env_sap = gym.make("RLRMCSA-v0", **env_args)
     env_sap = DummyVecEnv([lambda: env_sap])
     if flag == False:
@@ -105,7 +105,7 @@ print('\tBit rate blocking:', (env_sap.episode_bit_rate_requested - env_sap.epis
 print('\tRequest blocking:', (env_sap.episode_services_processed - env_sap.episode_services_accepted) / env_sap.episode_services_processed)
 print("Throughput:", env_sap.topology.graph["throughput"])
 
-
+"""
 init_env = gym.make("RLRMCSA-v0", **env_args)
 env_rnd = SimpleMatrixObservation(init_env)
 mean_reward_rnd, std_reward_rnd = evaluate_heuristic(
@@ -147,7 +147,7 @@ print("Throughput:", env_sap.topology.graph["throughput"])
 # for key, value in env_sap.core_utilization.items():
 #     print('\t\tUtilization per core ({}): {}'.format(key, np.mean(env_sap.core_utilization[key])))
 
-"""
+
 #Specific - modify
 env_sp = gym.make('RMCSA-v0', **env_args)
 mean_reward_sp, std_reward_sp = evaluate_heuristic(env_sp, shortest_path_first_fit, n_eval_episodes=episodes)
@@ -166,4 +166,5 @@ mean_reward_llp, std_reward_llp = evaluate_heuristic(env_llp, least_loaded_path_
 print('LLP-FF:'.ljust(8), f'{mean_reward_llp:.4f}  {std_reward_llp:.4f}')
 print('Bit rate blocking:', (env_llp.episode_bit_rate_requested - env_llp.episode_bit_rate_provisioned) / env_llp.episode_bit_rate_requested)
 print('Request blocking:', (env_llp.episode_services_processed - env_llp.episode_services_accepted) / env_llp.episode_services_processed)
+
 """

@@ -37,8 +37,8 @@ with open(
     
     
 logging.getLogger("rlrmsaenv").setLevel(logging.INFO)
-load = 350
-seed = 20
+load = 1000
+seed = 3000
 episodes = 10
 episode_length = 100000
 num_spatial_resources = 7
@@ -72,7 +72,7 @@ for seeds_cnt in range(episodes):
     )
     seeds = [seeds_cnt]
     print("STR".ljust(5), "REW".rjust(7), "STD".rjust(7))
-
+    print("Erlang:", load, "    seed:  ", seeds_cnt)
     env_sap = gym.make("RLRMCSA-v0", **env_args)
     env_sap = DummyVecEnv([lambda: env_sap])
     if flag == False:
