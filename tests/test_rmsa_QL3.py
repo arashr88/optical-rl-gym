@@ -61,7 +61,8 @@ for load in range(50, 801, 50):
             os.path.join( "examples", "topologies", "europe_network_5-paths_1-modulations.h5"), "rb"
         ) as f:
             topology = pickle.load(f)
-
+        
+        print("Erlang:", load, "    seed:  ", seeds_cnt)
         env_args = dict(
             topology=topology,
             seed=seeds_cnt,
@@ -101,6 +102,7 @@ for load in range(50, 801, 50):
         # Write the updated data back to the file
             json.dump(output, file, indent=4, cls=NumpyArrayEncoder)
     
+"""
 print("Rnd:".ljust(8), f"{mean_reward_rnd:.4f}  {std_reward_rnd:>7.4f}")
 print(
     "\tBit rate blocking:",
@@ -182,3 +184,4 @@ print(
     (env_llp.episode_services_processed - env_llp.episode_services_accepted)
     / env_llp.episode_services_processed,
 )
+"""

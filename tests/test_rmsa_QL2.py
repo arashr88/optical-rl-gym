@@ -62,6 +62,7 @@ for load in range(50, 801, 50):
         ) as f:
             topology = pickle.load(f)
 
+        print("Erlang:", load, "    seed:  ", seeds_cnt)
         env_args = dict(
             topology=topology,
             seed=seeds_cnt,
@@ -100,7 +101,8 @@ for load in range(50, 801, 50):
         with open("data_A2C_load_new_reward.json", "w") as file:
         # Write the updated data back to the file
             json.dump(output, file, indent=4, cls=NumpyArrayEncoder)
-    
+ 
+"""   
 print("Rnd:".ljust(8), f"{mean_reward_rnd:.4f}  {std_reward_rnd:>7.4f}")
 print(
     "\tBit rate blocking:",
@@ -182,3 +184,4 @@ print(
     (env_llp.episode_services_processed - env_llp.episode_services_accepted)
     / env_llp.episode_services_processed,
 )
+"""
