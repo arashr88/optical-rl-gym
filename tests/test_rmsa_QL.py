@@ -61,7 +61,7 @@ for load in range(50, 801, 50):
             os.path.join( "examples", "topologies", "europe_network_5-paths_1-modulations.h5"), "rb"
         ) as f:
             topology = pickle.load(f)
-
+        print("Erlang:", load, "    seed:  ", seeds_cnt)
         env_args = dict(
             topology=topology,
             seed=seeds_cnt,
