@@ -1,0 +1,2558 @@
+{
+    "700": {
+        "0": {
+            "request_blocking": 0.17417417417417416,
+            "BW_Blocking": 0.2688132474701012,
+            "info": {
+                "service_blocking_rate": 0.17417417417417416,
+                "episode_service_blocking_rate": 0.17417417417417416,
+                "bit_rate_blocking_rate": 0.2688132474701012,
+                "episode_bit_rate_blocking_rate": 0.2688132474701012,
+                "network_compactness": 0.13422366610725572,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.31757105013505593,
+                "avg_link_utilization": 0.4108209761371695,
+                "bit_rate_blocking_450": 0.32382892057026474,
+                "bit_rate_blocking_100": 0.02952755905511811,
+                "fairness": 0.29430136151514663
+            }
+        },
+        "1": {
+            "request_blocking": 0.17217217217217218,
+            "BW_Blocking": 0.2561558250643146,
+            "info": {
+                "service_blocking_rate": 0.17217217217217218,
+                "episode_service_blocking_rate": 0.17217217217217218,
+                "bit_rate_blocking_rate": 0.2561558250643146,
+                "episode_bit_rate_blocking_rate": 0.2561558250643146,
+                "network_compactness": 0.13941470691177205,
+                "network_compactness_difference": 0.0001931176830200776,
+                "avg_link_compactness": 0.31482170092433653,
+                "avg_link_utilization": 0.4114477432633676,
+                "bit_rate_blocking_450": 0.3048780487804878,
+                "bit_rate_blocking_100": 0.04339250493096647,
+                "fairness": 0.26148554384952133
+            }
+        },
+        "2": {
+            "request_blocking": 0.17517517517517517,
+            "BW_Blocking": 0.2650081124932396,
+            "info": {
+                "service_blocking_rate": 0.17517517517517517,
+                "episode_service_blocking_rate": 0.17517517517517517,
+                "bit_rate_blocking_rate": 0.2650081124932396,
+                "episode_bit_rate_blocking_rate": 0.2650081124932396,
+                "network_compactness": 0.13257202219194372,
+                "network_compactness_difference": 0.0004015458898568025,
+                "avg_link_compactness": 0.3379456015153175,
+                "avg_link_utilization": 0.39966174717213343,
+                "bit_rate_blocking_450": 0.3155818540433925,
+                "bit_rate_blocking_100": 0.03048780487804878,
+                "fairness": 0.28509404916534375
+            }
+        },
+        "3": {
+            "request_blocking": 0.1961961961961962,
+            "BW_Blocking": 0.2839528234453181,
+            "info": {
+                "service_blocking_rate": 0.1961961961961962,
+                "episode_service_blocking_rate": 0.1961961961961962,
+                "bit_rate_blocking_rate": 0.2839528234453181,
+                "episode_bit_rate_blocking_rate": 0.2839528234453181,
+                "network_compactness": 0.13573298823246158,
+                "network_compactness_difference": 0.00030655351789904417,
+                "avg_link_compactness": 0.3036848750195251,
+                "avg_link_utilization": 0.43423435024580875,
+                "bit_rate_blocking_450": 0.3326848249027237,
+                "bit_rate_blocking_100": 0.05154639175257732,
+                "fairness": 0.2811384331501464
+            }
+        },
+        "4": {
+            "request_blocking": 0.17717717717717718,
+            "BW_Blocking": 0.2706726457399103,
+            "info": {
+                "service_blocking_rate": 0.17717717717717718,
+                "episode_service_blocking_rate": 0.17717717717717718,
+                "bit_rate_blocking_rate": 0.2706726457399103,
+                "episode_bit_rate_blocking_rate": 0.2706726457399103,
+                "network_compactness": 0.13547689022027762,
+                "network_compactness_difference": 0.0003546321903176164,
+                "avg_link_compactness": 0.3236585083534531,
+                "avg_link_utilization": 0.4262830043121279,
+                "bit_rate_blocking_450": 0.32289628180039137,
+                "bit_rate_blocking_100": 0.02459016393442623,
+                "fairness": 0.29830611786596517
+            }
+        },
+        "5": {
+            "request_blocking": 0.15415415415415415,
+            "BW_Blocking": 0.2249736564805058,
+            "info": {
+                "service_blocking_rate": 0.15415415415415415,
+                "episode_service_blocking_rate": 0.15415415415415415,
+                "bit_rate_blocking_rate": 0.2249736564805058,
+                "episode_bit_rate_blocking_rate": 0.2249736564805058,
+                "network_compactness": 0.14701040266285162,
+                "network_compactness_difference": 0.0005502631140448244,
+                "avg_link_compactness": 0.3097671419676526,
+                "avg_link_utilization": 0.42086444568869963,
+                "bit_rate_blocking_450": 0.26325757575757575,
+                "bit_rate_blocking_100": 0.03184713375796178,
+                "fairness": 0.23141044199961397
+            }
+        },
+        "6": {
+            "request_blocking": 0.15715715715715717,
+            "BW_Blocking": 0.2353583121134958,
+            "info": {
+                "service_blocking_rate": 0.15715715715715717,
+                "episode_service_blocking_rate": 0.15715715715715717,
+                "bit_rate_blocking_rate": 0.2353583121134958,
+                "episode_bit_rate_blocking_rate": 0.2353583121134958,
+                "network_compactness": 0.1458809185438702,
+                "network_compactness_difference": 0.0004065233901180687,
+                "avg_link_compactness": 0.284480510955275,
+                "avg_link_utilization": 0.42196578954502967,
+                "bit_rate_blocking_450": 0.28,
+                "bit_rate_blocking_100": 0.03406813627254509,
+                "fairness": 0.24593186372745493
+            }
+        },
+        "7": {
+            "request_blocking": 0.14814814814814814,
+            "BW_Blocking": 0.23188143864088198,
+            "info": {
+                "service_blocking_rate": 0.14814814814814814,
+                "episode_service_blocking_rate": 0.14814814814814814,
+                "bit_rate_blocking_rate": 0.23188143864088198,
+                "episode_bit_rate_blocking_rate": 0.23188143864088198,
+                "network_compactness": 0.13818943065684547,
+                "network_compactness_difference": 0.0003631886047169297,
+                "avg_link_compactness": 0.2927131959485765,
+                "avg_link_utilization": 0.41405744829277547,
+                "bit_rate_blocking_450": 0.27920792079207923,
+                "bit_rate_blocking_100": 0.01417004048582996,
+                "fairness": 0.26503788030624925
+            }
+        },
+        "8": {
+            "request_blocking": 0.17117117117117117,
+            "BW_Blocking": 0.2581922938422758,
+            "info": {
+                "service_blocking_rate": 0.17117117117117117,
+                "episode_service_blocking_rate": 0.17117117117117117,
+                "bit_rate_blocking_rate": 0.2581922938422758,
+                "episode_bit_rate_blocking_rate": 0.2581922938422758,
+                "network_compactness": 0.14642468004949308,
+                "network_compactness_difference": 0.00018084892669317787,
+                "avg_link_compactness": 0.3256325511315935,
+                "avg_link_utilization": 0.4222384100654783,
+                "bit_rate_blocking_450": 0.30708661417322836,
+                "bit_rate_blocking_100": 0.03054989816700611,
+                "fairness": 0.27653671600622226
+            }
+        },
+        "9": {
+            "request_blocking": 0.18118118118118118,
+            "BW_Blocking": 0.25789286981199006,
+            "info": {
+                "service_blocking_rate": 0.18118118118118118,
+                "episode_service_blocking_rate": 0.18118118118118118,
+                "bit_rate_blocking_rate": 0.25789286981199006,
+                "episode_bit_rate_blocking_rate": 0.25789286981199006,
+                "network_compactness": 0.1488414396645313,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3094531233575089,
+                "avg_link_utilization": 0.4055596378131085,
+                "bit_rate_blocking_450": 0.3,
+                "bit_rate_blocking_100": 0.05219206680584551,
+                "fairness": 0.24780793319415448
+            }
+        },
+        "10": {
+            "request_blocking": 0.16816816816816818,
+            "BW_Blocking": 0.25210237659963436,
+            "info": {
+                "service_blocking_rate": 0.16816816816816818,
+                "episode_service_blocking_rate": 0.16816816816816818,
+                "bit_rate_blocking_rate": 0.25210237659963436,
+                "episode_bit_rate_blocking_rate": 0.25210237659963436,
+                "network_compactness": 0.137246191435421,
+                "network_compactness_difference": 0.00030942675895379024,
+                "avg_link_compactness": 0.30816292239628135,
+                "avg_link_utilization": 0.4168879792509572,
+                "bit_rate_blocking_450": 0.3004032258064516,
+                "bit_rate_blocking_100": 0.03777335984095427,
+                "fairness": 0.26262986596549737
+            }
+        },
+        "11": {
+            "request_blocking": 0.17217217217217218,
+            "BW_Blocking": 0.25629127253257183,
+            "info": {
+                "service_blocking_rate": 0.17217217217217218,
+                "episode_service_blocking_rate": 0.17217217217217218,
+                "bit_rate_blocking_rate": 0.25629127253257183,
+                "episode_bit_rate_blocking_rate": 0.25629127253257183,
+                "network_compactness": 0.13517149243568108,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3221744752037702,
+                "avg_link_utilization": 0.40913500405283243,
+                "bit_rate_blocking_450": 0.3029126213592233,
+                "bit_rate_blocking_100": 0.03305785123966942,
+                "fairness": 0.2698547701195539
+            }
+        },
+        "12": {
+            "request_blocking": 0.16316316316316315,
+            "BW_Blocking": 0.24193548387096775,
+            "info": {
+                "service_blocking_rate": 0.16316316316316315,
+                "episode_service_blocking_rate": 0.16316316316316315,
+                "bit_rate_blocking_rate": 0.24193548387096775,
+                "episode_bit_rate_blocking_rate": 0.24193548387096775,
+                "network_compactness": 0.1414691056590399,
+                "network_compactness_difference": 0.0004361156014321965,
+                "avg_link_compactness": 0.2958552563697124,
+                "avg_link_utilization": 0.41827030713282704,
+                "bit_rate_blocking_450": 0.2874493927125506,
+                "bit_rate_blocking_100": 0.041584158415841586,
+                "fairness": 0.245865234296709
+            }
+        },
+        "13": {
+            "request_blocking": 0.1921921921921922,
+            "BW_Blocking": 0.28436100585601104,
+            "info": {
+                "service_blocking_rate": 0.1921921921921922,
+                "episode_service_blocking_rate": 0.1921921921921922,
+                "bit_rate_blocking_rate": 0.28436100585601104,
+                "episode_bit_rate_blocking_rate": 0.28436100585601104,
+                "network_compactness": 0.14576771374251582,
+                "network_compactness_difference": 0.00045701340008572067,
+                "avg_link_compactness": 0.2941560970899723,
+                "avg_link_utilization": 0.42758455378120436,
+                "bit_rate_blocking_450": 0.3327205882352941,
+                "bit_rate_blocking_100": 0.024175824175824177,
+                "fairness": 0.3085447640594699
+            }
+        },
+        "14": {
+            "request_blocking": 0.15815815815815815,
+            "BW_Blocking": 0.23699527100763915,
+            "info": {
+                "service_blocking_rate": 0.15815815815815815,
+                "episode_service_blocking_rate": 0.15815815815815815,
+                "bit_rate_blocking_rate": 0.23699527100763915,
+                "episode_bit_rate_blocking_rate": 0.23699527100763915,
+                "network_compactness": 0.14986679620864166,
+                "network_compactness_difference": 0.00024302723709510032,
+                "avg_link_compactness": 0.3145864096472332,
+                "avg_link_utilization": 0.42873164966483107,
+                "bit_rate_blocking_450": 0.282,
+                "bit_rate_blocking_100": 0.03406813627254509,
+                "fairness": 0.24793186372745488
+            }
+        },
+        "15": {
+            "request_blocking": 0.14514514514514515,
+            "BW_Blocking": 0.21606049693914295,
+            "info": {
+                "service_blocking_rate": 0.14514514514514515,
+                "episode_service_blocking_rate": 0.14514514514514515,
+                "bit_rate_blocking_rate": 0.21606049693914295,
+                "episode_bit_rate_blocking_rate": 0.21606049693914295,
+                "network_compactness": 0.1418054987492034,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3245891075157033,
+                "avg_link_utilization": 0.4081446062340224,
+                "bit_rate_blocking_450": 0.2559055118110236,
+                "bit_rate_blocking_100": 0.03054989816700611,
+                "fairness": 0.22535561364401752
+            }
+        },
+        "16": {
+            "request_blocking": 0.16116116116116116,
+            "BW_Blocking": 0.25534266764922625,
+            "info": {
+                "service_blocking_rate": 0.16116116116116116,
+                "episode_service_blocking_rate": 0.16116116116116116,
+                "bit_rate_blocking_rate": 0.25534266764922625,
+                "episode_bit_rate_blocking_rate": 0.25534266764922625,
+                "network_compactness": 0.13935843027501138,
+                "network_compactness_difference": 0.0005428231539652828,
+                "avg_link_compactness": 0.3043428103626668,
+                "avg_link_utilization": 0.4133452564744941,
+                "bit_rate_blocking_450": 0.31020408163265306,
+                "bit_rate_blocking_100": 0.01768172888015717,
+                "fairness": 0.2925223527524959
+            }
+        },
+        "17": {
+            "request_blocking": 0.13613613613613615,
+            "BW_Blocking": 0.2103601930932046,
+            "info": {
+                "service_blocking_rate": 0.13613613613613615,
+                "episode_service_blocking_rate": 0.13613613613613615,
+                "bit_rate_blocking_rate": 0.2103601930932046,
+                "episode_bit_rate_blocking_rate": 0.2103601930932046,
+                "network_compactness": 0.1318982678227509,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.32599201804492084,
+                "avg_link_utilization": 0.4146518699651826,
+                "bit_rate_blocking_450": 0.25413223140495866,
+                "bit_rate_blocking_100": 0.02524271844660194,
+                "fairness": 0.22888951295835672
+            }
+        },
+        "18": {
+            "request_blocking": 0.16516516516516516,
+            "BW_Blocking": 0.24416135881104034,
+            "info": {
+                "service_blocking_rate": 0.16516516516516516,
+                "episode_service_blocking_rate": 0.16516516516516516,
+                "bit_rate_blocking_rate": 0.24416135881104034,
+                "episode_bit_rate_blocking_rate": 0.24416135881104034,
+                "network_compactness": 0.1389626201631612,
+                "network_compactness_difference": 0.0005353638891607837,
+                "avg_link_compactness": 0.28566410568791245,
+                "avg_link_utilization": 0.43000067182697627,
+                "bit_rate_blocking_450": 0.28735632183908044,
+                "bit_rate_blocking_100": 0.031446540880503145,
+                "fairness": 0.2559097809585773
+            }
+        },
+        "19": {
+            "request_blocking": 0.15015015015015015,
+            "BW_Blocking": 0.23124432334241599,
+            "info": {
+                "service_blocking_rate": 0.15015015015015015,
+                "episode_service_blocking_rate": 0.15015015015015015,
+                "bit_rate_blocking_rate": 0.23124432334241599,
+                "episode_bit_rate_blocking_rate": 0.23124432334241599,
+                "network_compactness": 0.14681699691202016,
+                "network_compactness_difference": 0.0006161492244501909,
+                "avg_link_compactness": 0.3233070765677928,
+                "avg_link_utilization": 0.41285722601164004,
+                "bit_rate_blocking_450": 0.2774451097804391,
+                "bit_rate_blocking_100": 0.02208835341365462,
+                "fairness": 0.2553567563667845
+            }
+        },
+        "20": {
+            "request_blocking": 0.14514514514514515,
+            "BW_Blocking": 0.22581838357684483,
+            "info": {
+                "service_blocking_rate": 0.14514514514514515,
+                "episode_service_blocking_rate": 0.14514514514514515,
+                "bit_rate_blocking_rate": 0.22581838357684483,
+                "episode_bit_rate_blocking_rate": 0.22581838357684483,
+                "network_compactness": 0.1460809865608698,
+                "network_compactness_difference": 0.00020379601919764956,
+                "avg_link_compactness": 0.27747985097544253,
+                "avg_link_utilization": 0.42677406063896,
+                "bit_rate_blocking_450": 0.2731006160164271,
+                "bit_rate_blocking_100": 0.0234375,
+                "fairness": 0.2496631160164271
+            }
+        },
+        "21": {
+            "request_blocking": 0.17317317317317318,
+            "BW_Blocking": 0.25295938808960117,
+            "info": {
+                "service_blocking_rate": 0.17317317317317318,
+                "episode_service_blocking_rate": 0.17317317317317318,
+                "bit_rate_blocking_rate": 0.25295938808960117,
+                "episode_bit_rate_blocking_rate": 0.25295938808960117,
+                "network_compactness": 0.1405638752875121,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3217227325350017,
+                "avg_link_utilization": 0.4221792216778798,
+                "bit_rate_blocking_450": 0.2985971943887776,
+                "bit_rate_blocking_100": 0.048,
+                "fairness": 0.2505971943887776
+            }
+        },
+        "22": {
+            "request_blocking": 0.15715715715715717,
+            "BW_Blocking": 0.24933282500953108,
+            "info": {
+                "service_blocking_rate": 0.15715715715715717,
+                "episode_service_blocking_rate": 0.15715715715715717,
+                "bit_rate_blocking_rate": 0.24933282500953108,
+                "episode_bit_rate_blocking_rate": 0.24933282500953108,
+                "network_compactness": 0.1273911427224338,
+                "network_compactness_difference": 0.0009268052592174281,
+                "avg_link_compactness": 0.2696957979929227,
+                "avg_link_utilization": 0.4101073120628935,
+                "bit_rate_blocking_450": 0.30603448275862066,
+                "bit_rate_blocking_100": 0.028037383177570093,
+                "fairness": 0.27799709958105057
+            }
+        },
+        "23": {
+            "request_blocking": 0.17417417417417416,
+            "BW_Blocking": 0.260427807486631,
+            "info": {
+                "service_blocking_rate": 0.17417417417417416,
+                "episode_service_blocking_rate": 0.17417417417417416,
+                "bit_rate_blocking_rate": 0.260427807486631,
+                "episode_bit_rate_blocking_rate": 0.260427807486631,
+                "network_compactness": 0.14865112711751366,
+                "network_compactness_difference": 7.758029731599891e-05,
+                "avg_link_compactness": 0.3169800852593459,
+                "avg_link_utilization": 0.4120589743001279,
+                "bit_rate_blocking_450": 0.3081395348837209,
+                "bit_rate_blocking_100": 0.031055900621118012,
+                "fairness": 0.2770836342626029
+            }
+        },
+        "24": {
+            "request_blocking": 0.16616616616616617,
+            "BW_Blocking": 0.24848596072673884,
+            "info": {
+                "service_blocking_rate": 0.16616616616616617,
+                "episode_service_blocking_rate": 0.16616616616616617,
+                "bit_rate_blocking_rate": 0.24848596072673884,
+                "episode_bit_rate_blocking_rate": 0.24848596072673884,
+                "network_compactness": 0.12948873609568365,
+                "network_compactness_difference": 0.00015368569495730067,
+                "avg_link_compactness": 0.30978344684543446,
+                "avg_link_utilization": 0.4164625749287489,
+                "bit_rate_blocking_450": 0.2961460446247465,
+                "bit_rate_blocking_100": 0.039525691699604744,
+                "fairness": 0.25662035292514174
+            }
+        },
+        "25": {
+            "request_blocking": 0.16516516516516516,
+            "BW_Blocking": 0.24305177111716622,
+            "info": {
+                "service_blocking_rate": 0.16516516516516516,
+                "episode_service_blocking_rate": 0.16516516516516516,
+                "bit_rate_blocking_rate": 0.24305177111716622,
+                "episode_bit_rate_blocking_rate": 0.24305177111716622,
+                "network_compactness": 0.1353136281417684,
+                "network_compactness_difference": -0.00016222546158795037,
+                "avg_link_compactness": 0.3288200618797926,
+                "avg_link_utilization": 0.4018799408861899,
+                "bit_rate_blocking_450": 0.2874251497005988,
+                "bit_rate_blocking_100": 0.04216867469879518,
+                "fairness": 0.24525647500180361
+            }
+        },
+        "26": {
+            "request_blocking": 0.15215215215215216,
+            "BW_Blocking": 0.23180291153415453,
+            "info": {
+                "service_blocking_rate": 0.15215215215215216,
+                "episode_service_blocking_rate": 0.15215215215215216,
+                "bit_rate_blocking_rate": 0.23180291153415453,
+                "episode_bit_rate_blocking_rate": 0.23180291153415453,
+                "network_compactness": 0.13525813906852013,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.29817660649516053,
+                "avg_link_utilization": 0.4130685424973967,
+                "bit_rate_blocking_450": 0.2791666666666667,
+                "bit_rate_blocking_100": 0.03468208092485549,
+                "fairness": 0.2444845857418112
+            }
+        },
+        "27": {
+            "request_blocking": 0.15815815815815815,
+            "BW_Blocking": 0.2561243144424132,
+            "info": {
+                "service_blocking_rate": 0.15815815815815815,
+                "episode_service_blocking_rate": 0.15815815815815815,
+                "bit_rate_blocking_rate": 0.2561243144424132,
+                "episode_bit_rate_blocking_rate": 0.2561243144424132,
+                "network_compactness": 0.13978028175123905,
+                "network_compactness_difference": -0.0001361610682407144,
+                "avg_link_compactness": 0.2929295257079528,
+                "avg_link_utilization": 0.39520689330115744,
+                "bit_rate_blocking_450": 0.3125,
+                "bit_rate_blocking_100": 0.005964214711729622,
+                "fairness": 0.30653578528827036
+            }
+        },
+        "28": {
+            "request_blocking": 0.15515515515515516,
+            "BW_Blocking": 0.23323143319546843,
+            "info": {
+                "service_blocking_rate": 0.15515515515515516,
+                "episode_service_blocking_rate": 0.15515515515515516,
+                "bit_rate_blocking_rate": 0.23323143319546843,
+                "episode_bit_rate_blocking_rate": 0.23323143319546843,
+                "network_compactness": 0.13984862772365259,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.2939307271296387,
+                "avg_link_utilization": 0.43087270658985655,
+                "bit_rate_blocking_450": 0.2770137524557957,
+                "bit_rate_blocking_100": 0.02857142857142857,
+                "fairness": 0.2484423238843671
+            }
+        },
+        "29": {
+            "request_blocking": 0.14914914914914915,
+            "BW_Blocking": 0.22226310947562097,
+            "info": {
+                "service_blocking_rate": 0.14914914914914915,
+                "episode_service_blocking_rate": 0.14914914914914915,
+                "bit_rate_blocking_rate": 0.22226310947562097,
+                "episode_bit_rate_blocking_rate": 0.22226310947562097,
+                "network_compactness": 0.13453499623942913,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3313320111369583,
+                "avg_link_utilization": 0.39878090852405423,
+                "bit_rate_blocking_450": 0.26476578411405294,
+                "bit_rate_blocking_100": 0.03740157480314961,
+                "fairness": 0.22736420931090334
+            }
+        },
+        "30": {
+            "request_blocking": 0.16816816816816818,
+            "BW_Blocking": 0.2423701588434767,
+            "info": {
+                "service_blocking_rate": 0.16816816816816818,
+                "episode_service_blocking_rate": 0.16816816816816818,
+                "bit_rate_blocking_rate": 0.2423701588434767,
+                "episode_bit_rate_blocking_rate": 0.2423701588434767,
+                "network_compactness": 0.1487225653531463,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3103665014278234,
+                "avg_link_utilization": 0.42720548655888624,
+                "bit_rate_blocking_450": 0.283495145631068,
+                "bit_rate_blocking_100": 0.045454545454545456,
+                "fairness": 0.2380406001765225
+            }
+        },
+        "31": {
+            "request_blocking": 0.12512512512512514,
+            "BW_Blocking": 0.1972140762463343,
+            "info": {
+                "service_blocking_rate": 0.12512512512512514,
+                "episode_service_blocking_rate": 0.12512512512512514,
+                "bit_rate_blocking_rate": 0.1972140762463343,
+                "episode_bit_rate_blocking_rate": 0.1972140762463343,
+                "network_compactness": 0.13143417557798048,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3111647086411557,
+                "avg_link_utilization": 0.41385900430297007,
+                "bit_rate_blocking_450": 0.2388663967611336,
+                "bit_rate_blocking_100": 0.013861386138613862,
+                "fairness": 0.22500501062251974
+            }
+        },
+        "32": {
+            "request_blocking": 0.17617617617617617,
+            "BW_Blocking": 0.2766460531102219,
+            "info": {
+                "service_blocking_rate": 0.17617617617617617,
+                "episode_service_blocking_rate": 0.17617617617617617,
+                "bit_rate_blocking_rate": 0.2766460531102219,
+                "episode_bit_rate_blocking_rate": 0.2766460531102219,
+                "network_compactness": 0.13048637014473455,
+                "network_compactness_difference": 0.0005168731416662631,
+                "avg_link_compactness": 0.31093139797819036,
+                "avg_link_utilization": 0.4132193283977043,
+                "bit_rate_blocking_450": 0.334,
+                "bit_rate_blocking_100": 0.018036072144288578,
+                "fairness": 0.3159639278557114
+            }
+        },
+        "33": {
+            "request_blocking": 0.14414414414414414,
+            "BW_Blocking": 0.20945823518753398,
+            "info": {
+                "service_blocking_rate": 0.14414414414414414,
+                "episode_service_blocking_rate": 0.14414414414414414,
+                "bit_rate_blocking_rate": 0.20945823518753398,
+                "episode_bit_rate_blocking_rate": 0.20945823518753398,
+                "network_compactness": 0.14910570734973289,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.30141529037632414,
+                "avg_link_utilization": 0.4174640821674671,
+                "bit_rate_blocking_450": 0.24652087475149106,
+                "bit_rate_blocking_100": 0.04032258064516129,
+                "fairness": 0.20619829410632978
+            }
+        },
+        "34": {
+            "request_blocking": 0.16916916916916916,
+            "BW_Blocking": 0.2474023647438194,
+            "info": {
+                "service_blocking_rate": 0.16916916916916916,
+                "episode_service_blocking_rate": 0.16916916916916916,
+                "bit_rate_blocking_rate": 0.2474023647438194,
+                "episode_bit_rate_blocking_rate": 0.2474023647438194,
+                "network_compactness": 0.14838728267142506,
+                "network_compactness_difference": 0.00016949649432845826,
+                "avg_link_compactness": 0.32534895926469154,
+                "avg_link_utilization": 0.42221505099537954,
+                "bit_rate_blocking_450": 0.291015625,
+                "bit_rate_blocking_100": 0.04106776180698152,
+                "fairness": 0.24994786319301848
+            }
+        },
+        "35": {
+            "request_blocking": 0.15715715715715717,
+            "BW_Blocking": 0.24310283052669293,
+            "info": {
+                "service_blocking_rate": 0.15715715715715717,
+                "episode_service_blocking_rate": 0.15715715715715717,
+                "bit_rate_blocking_rate": 0.24310283052669293,
+                "episode_bit_rate_blocking_rate": 0.24310283052669293,
+                "network_compactness": 0.13857201390803542,
+                "network_compactness_difference": 0.0006766633406418143,
+                "avg_link_compactness": 0.3215610271992064,
+                "avg_link_utilization": 0.42786885561099697,
+                "bit_rate_blocking_450": 0.291015625,
+                "bit_rate_blocking_100": 0.01642710472279261,
+                "fairness": 0.27458852027720737
+            }
+        },
+        "36": {
+            "request_blocking": 0.17117117117117117,
+            "BW_Blocking": 0.2603327965646806,
+            "info": {
+                "service_blocking_rate": 0.17117117117117117,
+                "episode_service_blocking_rate": 0.17117117117117117,
+                "bit_rate_blocking_rate": 0.2603327965646806,
+                "episode_bit_rate_blocking_rate": 0.2603327965646806,
+                "network_compactness": 0.13216873555449055,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.29106992846125995,
+                "avg_link_utilization": 0.43367440622690145,
+                "bit_rate_blocking_450": 0.30994152046783624,
+                "bit_rate_blocking_100": 0.024691358024691357,
+                "fairness": 0.2852501624431449
+            }
+        },
+        "37": {
+            "request_blocking": 0.15115115115115116,
+            "BW_Blocking": 0.23527298850574713,
+            "info": {
+                "service_blocking_rate": 0.15115115115115116,
+                "episode_service_blocking_rate": 0.15115115115115116,
+                "bit_rate_blocking_rate": 0.23527298850574713,
+                "episode_bit_rate_blocking_rate": 0.23527298850574713,
+                "network_compactness": 0.1346311862795194,
+                "network_compactness_difference": 0.0005236529999203543,
+                "avg_link_compactness": 0.2853894054056885,
+                "avg_link_utilization": 0.42506130471979214,
+                "bit_rate_blocking_450": 0.2823529411764706,
+                "bit_rate_blocking_100": 0.014314928425357873,
+                "fairness": 0.2680380127511127
+            }
+        },
+        "38": {
+            "request_blocking": 0.15715715715715717,
+            "BW_Blocking": 0.2330705840200645,
+            "info": {
+                "service_blocking_rate": 0.15715715715715717,
+                "episode_service_blocking_rate": 0.15715715715715717,
+                "bit_rate_blocking_rate": 0.2330705840200645,
+                "episode_bit_rate_blocking_rate": 0.2330705840200645,
+                "network_compactness": 0.14916139675556778,
+                "network_compactness_difference": 0.0012818024807244865,
+                "avg_link_compactness": 0.29605112595908445,
+                "avg_link_utilization": 0.4144381924526784,
+                "bit_rate_blocking_450": 0.275390625,
+                "bit_rate_blocking_100": 0.03285420944558522,
+                "fairness": 0.2425364155544148
+            }
+        },
+        "39": {
+            "request_blocking": 0.16816816816816818,
+            "BW_Blocking": 0.2529672276350753,
+            "info": {
+                "service_blocking_rate": 0.16816816816816818,
+                "episode_service_blocking_rate": 0.16816816816816818,
+                "bit_rate_blocking_rate": 0.2529672276350753,
+                "episode_bit_rate_blocking_rate": 0.2529672276350753,
+                "network_compactness": 0.1381066527705402,
+                "network_compactness_difference": 0.0005246792914487819,
+                "avg_link_compactness": 0.3077327375320569,
+                "avg_link_utilization": 0.4139596539102659,
+                "bit_rate_blocking_450": 0.29942418426103645,
+                "bit_rate_blocking_100": 0.02510460251046025,
+                "fairness": 0.2743195817505762
+            }
+        },
+        "40": {
+            "request_blocking": 0.15315315315315314,
+            "BW_Blocking": 0.23443946188340808,
+            "info": {
+                "service_blocking_rate": 0.15315315315315314,
+                "episode_service_blocking_rate": 0.15315315315315314,
+                "bit_rate_blocking_rate": 0.23443946188340808,
+                "episode_bit_rate_blocking_rate": 0.23443946188340808,
+                "network_compactness": 0.1398104450023665,
+                "network_compactness_difference": 0.0009742802163209829,
+                "avg_link_compactness": 0.2993029359330169,
+                "avg_link_utilization": 0.4315743109843057,
+                "bit_rate_blocking_450": 0.27984344422700586,
+                "bit_rate_blocking_100": 0.020491803278688523,
+                "fairness": 0.2593516409483173
+            }
+        },
+        "41": {
+            "request_blocking": 0.16416416416416416,
+            "BW_Blocking": 0.24399060184348453,
+            "info": {
+                "service_blocking_rate": 0.16416416416416416,
+                "episode_service_blocking_rate": 0.16416416416416416,
+                "bit_rate_blocking_rate": 0.24399060184348453,
+                "episode_bit_rate_blocking_rate": 0.24399060184348453,
+                "network_compactness": 0.1376782808498392,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.2962114190573521,
+                "avg_link_utilization": 0.4420791534812956,
+                "bit_rate_blocking_450": 0.2891089108910891,
+                "bit_rate_blocking_100": 0.03643724696356275,
+                "fairness": 0.2526716639275263
+            }
+        },
+        "42": {
+            "request_blocking": 0.16016016016016016,
+            "BW_Blocking": 0.2380868337451465,
+            "info": {
+                "service_blocking_rate": 0.16016016016016016,
+                "episode_service_blocking_rate": 0.16016016016016016,
+                "bit_rate_blocking_rate": 0.2380868337451465,
+                "episode_bit_rate_blocking_rate": 0.2380868337451465,
+                "network_compactness": 0.14646634623239219,
+                "network_compactness_difference": 8.550835970222437e-05,
+                "avg_link_compactness": 0.3232875901468151,
+                "avg_link_utilization": 0.41180520515293273,
+                "bit_rate_blocking_450": 0.28053435114503816,
+                "bit_rate_blocking_100": 0.02736842105263158,
+                "fairness": 0.25316593009240657
+            }
+        },
+        "43": {
+            "request_blocking": 0.18618618618618618,
+            "BW_Blocking": 0.2752839372633856,
+            "info": {
+                "service_blocking_rate": 0.18618618618618618,
+                "episode_service_blocking_rate": 0.18618618618618618,
+                "bit_rate_blocking_rate": 0.2752839372633856,
+                "episode_bit_rate_blocking_rate": 0.2752839372633856,
+                "network_compactness": 0.1522605091985826,
+                "network_compactness_difference": -0.00011948082591833886,
+                "avg_link_compactness": 0.31140345327596763,
+                "avg_link_utilization": 0.4255486938770155,
+                "bit_rate_blocking_450": 0.3254437869822485,
+                "bit_rate_blocking_100": 0.042682926829268296,
+                "fairness": 0.28276086015298024
+            }
+        },
+        "44": {
+            "request_blocking": 0.16516516516516516,
+            "BW_Blocking": 0.24972577696526507,
+            "info": {
+                "service_blocking_rate": 0.16516516516516516,
+                "episode_service_blocking_rate": 0.16516516516516516,
+                "bit_rate_blocking_rate": 0.24972577696526507,
+                "episode_bit_rate_blocking_rate": 0.24972577696526507,
+                "network_compactness": 0.1383220748108232,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.28413580300600283,
+                "avg_link_utilization": 0.4242477285305127,
+                "bit_rate_blocking_450": 0.29838709677419356,
+                "bit_rate_blocking_100": 0.033797216699801194,
+                "fairness": 0.2645898800743924
+            }
+        },
+        "45": {
+            "request_blocking": 0.17117117117117117,
+            "BW_Blocking": 0.2358031368307193,
+            "info": {
+                "service_blocking_rate": 0.17117117117117117,
+                "episode_service_blocking_rate": 0.17117117117117117,
+                "bit_rate_blocking_rate": 0.2358031368307193,
+                "episode_bit_rate_blocking_rate": 0.2358031368307193,
+                "network_compactness": 0.13640328225085774,
+                "network_compactness_difference": -3.4897768010078156e-05,
+                "avg_link_compactness": 0.3042823906043076,
+                "avg_link_utilization": 0.42332305488994676,
+                "bit_rate_blocking_450": 0.27218934911242604,
+                "bit_rate_blocking_100": 0.06707317073170732,
+                "fairness": 0.20511617838071872
+            }
+        },
+        "46": {
+            "request_blocking": 0.18018018018018017,
+            "BW_Blocking": 0.27542526239594645,
+            "info": {
+                "service_blocking_rate": 0.18018018018018017,
+                "episode_service_blocking_rate": 0.18018018018018017,
+                "bit_rate_blocking_rate": 0.27542526239594645,
+                "episode_bit_rate_blocking_rate": 0.27542526239594645,
+                "network_compactness": 0.13201389768043775,
+                "network_compactness_difference": 0.00015058619507274384,
+                "avg_link_compactness": 0.28073452977590696,
+                "avg_link_utilization": 0.42799590202585597,
+                "bit_rate_blocking_450": 0.32936507936507936,
+                "bit_rate_blocking_100": 0.028282828282828285,
+                "fairness": 0.30108225108225106
+            }
+        },
+        "47": {
+            "request_blocking": 0.14614614614614616,
+            "BW_Blocking": 0.22463091011025976,
+            "info": {
+                "service_blocking_rate": 0.14614614614614616,
+                "episode_service_blocking_rate": 0.14614614614614616,
+                "bit_rate_blocking_rate": 0.22463091011025976,
+                "episode_bit_rate_blocking_rate": 0.22463091011025976,
+                "network_compactness": 0.14012310767077443,
+                "network_compactness_difference": 0.0001971343664473324,
+                "avg_link_compactness": 0.3112621382089543,
+                "avg_link_utilization": 0.42590116773597547,
+                "bit_rate_blocking_450": 0.27139874739039666,
+                "bit_rate_blocking_100": 0.03076923076923077,
+                "fairness": 0.24062951662116588
+            }
+        },
+        "48": {
+            "request_blocking": 0.15115115115115116,
+            "BW_Blocking": 0.23686244204018547,
+            "info": {
+                "service_blocking_rate": 0.15115115115115116,
+                "episode_service_blocking_rate": 0.15115115115115116,
+                "bit_rate_blocking_rate": 0.23686244204018547,
+                "episode_bit_rate_blocking_rate": 0.23686244204018547,
+                "network_compactness": 0.13527961736001326,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.30357609161539384,
+                "avg_link_utilization": 0.4053755249135801,
+                "bit_rate_blocking_450": 0.2907488986784141,
+                "bit_rate_blocking_100": 0.03486238532110092,
+                "fairness": 0.25588651335731316
+            }
+        },
+        "49": {
+            "request_blocking": 0.15715715715715717,
+            "BW_Blocking": 0.2407576033509379,
+            "info": {
+                "service_blocking_rate": 0.15715715715715717,
+                "episode_service_blocking_rate": 0.15715715715715717,
+                "bit_rate_blocking_rate": 0.2407576033509379,
+                "episode_bit_rate_blocking_rate": 0.2407576033509379,
+                "network_compactness": 0.13175215913387944,
+                "network_compactness_difference": 5.35723065060445e-05,
+                "avg_link_compactness": 0.2939868026365948,
+                "avg_link_utilization": 0.4219477047138193,
+                "bit_rate_blocking_450": 0.28857715430861725,
+                "bit_rate_blocking_100": 0.026,
+                "fairness": 0.2625771543086172
+            }
+        }
+    },
+    "750": {
+        "0": {
+            "request_blocking": 0.17117117117117117,
+            "BW_Blocking": 0.25869365225390983,
+            "info": {
+                "service_blocking_rate": 0.17117117117117117,
+                "episode_service_blocking_rate": 0.17117117117117117,
+                "bit_rate_blocking_rate": 0.25869365225390983,
+                "episode_bit_rate_blocking_rate": 0.25869365225390983,
+                "network_compactness": 0.13020873026414634,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3196470870308355,
+                "avg_link_utilization": 0.4250744488767384,
+                "bit_rate_blocking_450": 0.3095723014256619,
+                "bit_rate_blocking_100": 0.03740157480314961,
+                "fairness": 0.2721707266225123
+            }
+        },
+        "1": {
+            "request_blocking": 0.17217217217217218,
+            "BW_Blocking": 0.2613009922822492,
+            "info": {
+                "service_blocking_rate": 0.17217217217217218,
+                "episode_service_blocking_rate": 0.17217217217217218,
+                "bit_rate_blocking_rate": 0.2613009922822492,
+                "episode_bit_rate_blocking_rate": 0.2613009922822492,
+                "network_compactness": 0.12998347626122217,
+                "network_compactness_difference": 0.0006984975246059622,
+                "avg_link_compactness": 0.3123818531145779,
+                "avg_link_utilization": 0.4156288236609772,
+                "bit_rate_blocking_450": 0.3130081300813008,
+                "bit_rate_blocking_100": 0.03550295857988166,
+                "fairness": 0.2775051715014191
+            }
+        },
+        "2": {
+            "request_blocking": 0.1871871871871872,
+            "BW_Blocking": 0.2668108887687038,
+            "info": {
+                "service_blocking_rate": 0.1871871871871872,
+                "episode_service_blocking_rate": 0.1871871871871872,
+                "bit_rate_blocking_rate": 0.2668108887687038,
+                "episode_bit_rate_blocking_rate": 0.2668108887687038,
+                "network_compactness": 0.13222226177679208,
+                "network_compactness_difference": 0.0007735838276477502,
+                "avg_link_compactness": 0.32429492792846737,
+                "avg_link_utilization": 0.4164554103805695,
+                "bit_rate_blocking_450": 0.3116370808678501,
+                "bit_rate_blocking_100": 0.05894308943089431,
+                "fairness": 0.25269399143695576
+            }
+        },
+        "3": {
+            "request_blocking": 0.21521521521521522,
+            "BW_Blocking": 0.31951393852751964,
+            "info": {
+                "service_blocking_rate": 0.21521521521521522,
+                "episode_service_blocking_rate": 0.21521521521521522,
+                "bit_rate_blocking_rate": 0.31951393852751964,
+                "episode_bit_rate_blocking_rate": 0.31951393852751964,
+                "network_compactness": 0.13362137106756905,
+                "network_compactness_difference": 0.00013197332655379146,
+                "avg_link_compactness": 0.2982640453142496,
+                "avg_link_utilization": 0.42807372065068144,
+                "bit_rate_blocking_450": 0.377431906614786,
+                "bit_rate_blocking_100": 0.04329896907216495,
+                "fairness": 0.334132937542621
+            }
+        },
+        "4": {
+            "request_blocking": 0.1841841841841842,
+            "BW_Blocking": 0.26062780269058294,
+            "info": {
+                "service_blocking_rate": 0.1841841841841842,
+                "episode_service_blocking_rate": 0.1841841841841842,
+                "bit_rate_blocking_rate": 0.26062780269058294,
+                "episode_bit_rate_blocking_rate": 0.26062780269058294,
+                "network_compactness": 0.14766255217364485,
+                "network_compactness_difference": 0.00017934722936069347,
+                "avg_link_compactness": 0.2898089021226397,
+                "avg_link_utilization": 0.43782070646066223,
+                "bit_rate_blocking_450": 0.30332681017612523,
+                "bit_rate_blocking_100": 0.05942622950819672,
+                "fairness": 0.24390058066792852
+            }
+        },
+        "5": {
+            "request_blocking": 0.16616616616616617,
+            "BW_Blocking": 0.24025289778714437,
+            "info": {
+                "service_blocking_rate": 0.16616616616616617,
+                "episode_service_blocking_rate": 0.16616616616616617,
+                "bit_rate_blocking_rate": 0.24025289778714437,
+                "episode_bit_rate_blocking_rate": 0.24025289778714437,
+                "network_compactness": 0.15366209282407825,
+                "network_compactness_difference": 0.0009101150427032745,
+                "avg_link_compactness": 0.2908614986830913,
+                "avg_link_utilization": 0.41438096037252814,
+                "bit_rate_blocking_450": 0.2803030303030303,
+                "bit_rate_blocking_100": 0.03821656050955414,
+                "fairness": 0.24208646979347614
+            }
+        },
+        "6": {
+            "request_blocking": 0.15615615615615616,
+            "BW_Blocking": 0.24263368497635504,
+            "info": {
+                "service_blocking_rate": 0.15615615615615616,
+                "episode_service_blocking_rate": 0.15615615615615616,
+                "bit_rate_blocking_rate": 0.24263368497635504,
+                "episode_bit_rate_blocking_rate": 0.24263368497635504,
+                "network_compactness": 0.13736941864695254,
+                "network_compactness_difference": 0.0005420337444967394,
+                "avg_link_compactness": 0.29777076366772515,
+                "avg_link_utilization": 0.4251810512973677,
+                "bit_rate_blocking_450": 0.292,
+                "bit_rate_blocking_100": 0.02004008016032064,
+                "fairness": 0.2719599198396793
+            }
+        },
+        "7": {
+            "request_blocking": 0.15515515515515516,
+            "BW_Blocking": 0.2204952105548527,
+            "info": {
+                "service_blocking_rate": 0.15515515515515516,
+                "episode_service_blocking_rate": 0.15515515515515516,
+                "bit_rate_blocking_rate": 0.2204952105548527,
+                "episode_bit_rate_blocking_rate": 0.2204952105548527,
+                "network_compactness": 0.14368074948202864,
+                "network_compactness_difference": 0.0003335732220232368,
+                "avg_link_compactness": 0.2798857113964762,
+                "avg_link_utilization": 0.42966462608800843,
+                "bit_rate_blocking_450": 0.25742574257425743,
+                "bit_rate_blocking_100": 0.05060728744939271,
+                "fairness": 0.20681845512486471
+            }
+        },
+        "8": {
+            "request_blocking": 0.1841841841841842,
+            "BW_Blocking": 0.2590925459128556,
+            "info": {
+                "service_blocking_rate": 0.1841841841841842,
+                "episode_service_blocking_rate": 0.1841841841841842,
+                "bit_rate_blocking_rate": 0.2590925459128556,
+                "episode_bit_rate_blocking_rate": 0.2590925459128556,
+                "network_compactness": 0.14391930964830832,
+                "network_compactness_difference": -0.0005371953653761086,
+                "avg_link_compactness": 0.3311689593290231,
+                "avg_link_utilization": 0.4305619207972945,
+                "bit_rate_blocking_450": 0.30118110236220474,
+                "bit_rate_blocking_100": 0.06313645621181263,
+                "fairness": 0.23804464615039211
+            }
+        },
+        "9": {
+            "request_blocking": 0.1781781781781782,
+            "BW_Blocking": 0.260553387726144,
+            "info": {
+                "service_blocking_rate": 0.1781781781781782,
+                "episode_service_blocking_rate": 0.1781781781781782,
+                "bit_rate_blocking_rate": 0.260553387726144,
+                "episode_bit_rate_blocking_rate": 0.260553387726144,
+                "network_compactness": 0.13751207366006063,
+                "network_compactness_difference": 0.0005698636762185294,
+                "avg_link_compactness": 0.295646589971353,
+                "avg_link_utilization": 0.4093855418028862,
+                "bit_rate_blocking_450": 0.3057692307692308,
+                "bit_rate_blocking_100": 0.03966597077244259,
+                "fairness": 0.2661032599967882
+            }
+        },
+        "10": {
+            "request_blocking": 0.17617617617617617,
+            "BW_Blocking": 0.2716636197440585,
+            "info": {
+                "service_blocking_rate": 0.17617617617617617,
+                "episode_service_blocking_rate": 0.17617617617617617,
+                "bit_rate_blocking_rate": 0.2716636197440585,
+                "episode_bit_rate_blocking_rate": 0.2716636197440585,
+                "network_compactness": 0.13199199174808932,
+                "network_compactness_difference": 0.0008943944848249508,
+                "avg_link_compactness": 0.3000251395960779,
+                "avg_link_utilization": 0.4154024902380643,
+                "bit_rate_blocking_450": 0.32661290322580644,
+                "bit_rate_blocking_100": 0.027833001988071572,
+                "fairness": 0.29877990123773485
+            }
+        },
+        "11": {
+            "request_blocking": 0.1931931931931932,
+            "BW_Blocking": 0.2837765482777084,
+            "info": {
+                "service_blocking_rate": 0.1931931931931932,
+                "episode_service_blocking_rate": 0.1931931931931932,
+                "bit_rate_blocking_rate": 0.2837765482777084,
+                "episode_bit_rate_blocking_rate": 0.2837765482777084,
+                "network_compactness": 0.13455357864347262,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.31229426988606784,
+                "avg_link_utilization": 0.4184314774724571,
+                "bit_rate_blocking_450": 0.3339805825242718,
+                "bit_rate_blocking_100": 0.04338842975206612,
+                "fairness": 0.2905921527722057
+            }
+        },
+        "12": {
+            "request_blocking": 0.1961961961961962,
+            "BW_Blocking": 0.29765395894428154,
+            "info": {
+                "service_blocking_rate": 0.1961961961961962,
+                "episode_service_blocking_rate": 0.1961961961961962,
+                "bit_rate_blocking_rate": 0.29765395894428154,
+                "episode_bit_rate_blocking_rate": 0.29765395894428154,
+                "network_compactness": 0.13663434682533185,
+                "network_compactness_difference": 0.0008748974936139409,
+                "avg_link_compactness": 0.30960094936131954,
+                "avg_link_utilization": 0.4163775585181036,
+                "bit_rate_blocking_450": 0.3562753036437247,
+                "bit_rate_blocking_100": 0.039603960396039604,
+                "fairness": 0.3166713432476851
+            }
+        },
+        "13": {
+            "request_blocking": 0.2022022022022022,
+            "BW_Blocking": 0.29262831553565277,
+            "info": {
+                "service_blocking_rate": 0.2022022022022022,
+                "episode_service_blocking_rate": 0.2022022022022022,
+                "bit_rate_blocking_rate": 0.29262831553565277,
+                "episode_bit_rate_blocking_rate": 0.29262831553565277,
+                "network_compactness": 0.14196420926449183,
+                "network_compactness_difference": 2.1441138467775955e-05,
+                "avg_link_compactness": 0.3107406929677216,
+                "avg_link_utilization": 0.43908264110597167,
+                "bit_rate_blocking_450": 0.3400735294117647,
+                "bit_rate_blocking_100": 0.03736263736263736,
+                "fairness": 0.3027108920491274
+            }
+        },
+        "14": {
+            "request_blocking": 0.16016016016016016,
+            "BW_Blocking": 0.24281556929792653,
+            "info": {
+                "service_blocking_rate": 0.16016016016016016,
+                "episode_service_blocking_rate": 0.16016016016016016,
+                "bit_rate_blocking_rate": 0.24281556929792653,
+                "episode_bit_rate_blocking_rate": 0.24281556929792653,
+                "network_compactness": 0.13969833400083784,
+                "network_compactness_difference": 0.0004251453541758987,
+                "avg_link_compactness": 0.30708609182748,
+                "avg_link_utilization": 0.43465708141273973,
+                "bit_rate_blocking_450": 0.29,
+                "bit_rate_blocking_100": 0.03006012024048096,
+                "fairness": 0.25993987975951904
+            }
+        },
+        "15": {
+            "request_blocking": 0.15715715715715717,
+            "BW_Blocking": 0.22290241267554917,
+            "info": {
+                "service_blocking_rate": 0.15715715715715717,
+                "episode_service_blocking_rate": 0.15715715715715717,
+                "bit_rate_blocking_rate": 0.22290241267554917,
+                "episode_bit_rate_blocking_rate": 0.22290241267554917,
+                "network_compactness": 0.13616876094345454,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.32909918967088503,
+                "avg_link_utilization": 0.4133714442210899,
+                "bit_rate_blocking_450": 0.25984251968503935,
+                "bit_rate_blocking_100": 0.05091649694501019,
+                "fairness": 0.20892602274002917
+            }
+        },
+        "16": {
+            "request_blocking": 0.16316316316316315,
+            "BW_Blocking": 0.2547899778924097,
+            "info": {
+                "service_blocking_rate": 0.16316316316316315,
+                "episode_service_blocking_rate": 0.16316316316316315,
+                "bit_rate_blocking_rate": 0.2547899778924097,
+                "episode_bit_rate_blocking_rate": 0.2547899778924097,
+                "network_compactness": 0.14044378205995356,
+                "network_compactness_difference": 0.0009570645565548375,
+                "avg_link_compactness": 0.3065103268441677,
+                "avg_link_utilization": 0.4129104481151202,
+                "bit_rate_blocking_450": 0.3081632653061224,
+                "bit_rate_blocking_100": 0.023575638506876228,
+                "fairness": 0.2845876267992462
+            }
+        },
+        "17": {
+            "request_blocking": 0.17017017017017017,
+            "BW_Blocking": 0.2502784998143335,
+            "info": {
+                "service_blocking_rate": 0.17017017017017017,
+                "episode_service_blocking_rate": 0.17017017017017017,
+                "bit_rate_blocking_rate": 0.2502784998143335,
+                "episode_bit_rate_blocking_rate": 0.2502784998143335,
+                "network_compactness": 0.13789420889657086,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.34269745504375837,
+                "avg_link_utilization": 0.416376176738867,
+                "bit_rate_blocking_450": 0.2975206611570248,
+                "bit_rate_blocking_100": 0.05048543689320388,
+                "fairness": 0.2470352242638209
+            }
+        },
+        "18": {
+            "request_blocking": 0.1781781781781782,
+            "BW_Blocking": 0.2636234961075725,
+            "info": {
+                "service_blocking_rate": 0.1781781781781782,
+                "episode_service_blocking_rate": 0.1781781781781782,
+                "bit_rate_blocking_rate": 0.2636234961075725,
+                "episode_bit_rate_blocking_rate": 0.2636234961075725,
+                "network_compactness": 0.13499917746619627,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.28391177477132634,
+                "avg_link_utilization": 0.43971369479568767,
+                "bit_rate_blocking_450": 0.3103448275862069,
+                "bit_rate_blocking_100": 0.033542976939203356,
+                "fairness": 0.2768018506470036
+            }
+        },
+        "19": {
+            "request_blocking": 0.15315315315315314,
+            "BW_Blocking": 0.23614895549500453,
+            "info": {
+                "service_blocking_rate": 0.15315315315315314,
+                "episode_service_blocking_rate": 0.15315315315315314,
+                "bit_rate_blocking_rate": 0.23614895549500453,
+                "episode_bit_rate_blocking_rate": 0.23614895549500453,
+                "network_compactness": 0.14110391315382756,
+                "network_compactness_difference": 0.0005869591285419251,
+                "avg_link_compactness": 0.3183977689551756,
+                "avg_link_utilization": 0.42485546124428397,
+                "bit_rate_blocking_450": 0.2834331337325349,
+                "bit_rate_blocking_100": 0.02208835341365462,
+                "fairness": 0.2613447803188803
+            }
+        },
+        "20": {
+            "request_blocking": 0.16316316316316315,
+            "BW_Blocking": 0.24024412798224523,
+            "info": {
+                "service_blocking_rate": 0.16316316316316315,
+                "episode_service_blocking_rate": 0.16316316316316315,
+                "bit_rate_blocking_rate": 0.24024412798224523,
+                "episode_bit_rate_blocking_rate": 0.24024412798224523,
+                "network_compactness": 0.13603598129155137,
+                "network_compactness_difference": 0.00018365867597078256,
+                "avg_link_compactness": 0.2748053691823447,
+                "avg_link_utilization": 0.4398178162895437,
+                "bit_rate_blocking_450": 0.28542094455852157,
+                "bit_rate_blocking_100": 0.046875,
+                "fairness": 0.23854594455852157
+            }
+        },
+        "21": {
+            "request_blocking": 0.1881881881881882,
+            "BW_Blocking": 0.2711710071025314,
+            "info": {
+                "service_blocking_rate": 0.1881881881881882,
+                "episode_service_blocking_rate": 0.1881881881881882,
+                "bit_rate_blocking_rate": 0.2711710071025314,
+                "episode_bit_rate_blocking_rate": 0.2711710071025314,
+                "network_compactness": 0.13861929276732216,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.31603854889013006,
+                "avg_link_utilization": 0.4310077012255809,
+                "bit_rate_blocking_450": 0.3186372745490982,
+                "bit_rate_blocking_100": 0.058,
+                "fairness": 0.2606372745490982
+            }
+        },
+        "22": {
+            "request_blocking": 0.15615615615615616,
+            "BW_Blocking": 0.2462828821959588,
+            "info": {
+                "service_blocking_rate": 0.15615615615615616,
+                "episode_service_blocking_rate": 0.15615615615615616,
+                "bit_rate_blocking_rate": 0.2462828821959588,
+                "episode_bit_rate_blocking_rate": 0.2462828821959588,
+                "network_compactness": 0.13112405048540862,
+                "network_compactness_difference": 0.0008003695367970742,
+                "avg_link_compactness": 0.2818134693303839,
+                "avg_link_utilization": 0.4220565161051638,
+                "bit_rate_blocking_450": 0.3017241379310345,
+                "bit_rate_blocking_100": 0.029906542056074768,
+                "fairness": 0.2718175958749597
+            }
+        },
+        "23": {
+            "request_blocking": 0.1981981981981982,
+            "BW_Blocking": 0.2964349376114082,
+            "info": {
+                "service_blocking_rate": 0.1981981981981982,
+                "episode_service_blocking_rate": 0.1981981981981982,
+                "bit_rate_blocking_rate": 0.2964349376114082,
+                "episode_bit_rate_blocking_rate": 0.2964349376114082,
+                "network_compactness": 0.14602467761387883,
+                "network_compactness_difference": 0.000750220775827426,
+                "avg_link_compactness": 0.30946406350152167,
+                "avg_link_utilization": 0.40780289296502414,
+                "bit_rate_blocking_450": 0.3507751937984496,
+                "bit_rate_blocking_100": 0.035196687370600416,
+                "fairness": 0.31557850642784924
+            }
+        },
+        "24": {
+            "request_blocking": 0.16316316316316315,
+            "BW_Blocking": 0.2422462837217838,
+            "info": {
+                "service_blocking_rate": 0.16316316316316315,
+                "episode_service_blocking_rate": 0.16316316316316315,
+                "bit_rate_blocking_rate": 0.2422462837217838,
+                "episode_bit_rate_blocking_rate": 0.2422462837217838,
+                "network_compactness": 0.13177822037499912,
+                "network_compactness_difference": 0.0005202760567245279,
+                "avg_link_compactness": 0.31010956040817217,
+                "avg_link_utilization": 0.4242947708207569,
+                "bit_rate_blocking_450": 0.2880324543610548,
+                "bit_rate_blocking_100": 0.041501976284584984,
+                "fairness": 0.2465304780764698
+            }
+        },
+        "25": {
+            "request_blocking": 0.18018018018018017,
+            "BW_Blocking": 0.27138964577656677,
+            "info": {
+                "service_blocking_rate": 0.18018018018018017,
+                "episode_service_blocking_rate": 0.18018018018018017,
+                "bit_rate_blocking_rate": 0.27138964577656677,
+                "episode_bit_rate_blocking_rate": 0.27138964577656677,
+                "network_compactness": 0.13684943242664382,
+                "network_compactness_difference": 0.0008141770944142535,
+                "avg_link_compactness": 0.3209339683654599,
+                "avg_link_utilization": 0.4041945566311511,
+                "bit_rate_blocking_450": 0.32335329341317365,
+                "bit_rate_blocking_100": 0.03614457831325301,
+                "fairness": 0.28720871509992063
+            }
+        },
+        "26": {
+            "request_blocking": 0.16816816816816818,
+            "BW_Blocking": 0.24822695035460993,
+            "info": {
+                "service_blocking_rate": 0.16816816816816818,
+                "episode_service_blocking_rate": 0.16816816816816818,
+                "bit_rate_blocking_rate": 0.24822695035460993,
+                "episode_bit_rate_blocking_rate": 0.24822695035460993,
+                "network_compactness": 0.13157518225467524,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.303460599481078,
+                "avg_link_utilization": 0.41809169853506367,
+                "bit_rate_blocking_450": 0.29583333333333334,
+                "bit_rate_blocking_100": 0.05009633911368015,
+                "fairness": 0.24573699421965317
+            }
+        },
+        "27": {
+            "request_blocking": 0.16916916916916916,
+            "BW_Blocking": 0.24990859232175502,
+            "info": {
+                "service_blocking_rate": 0.16916916916916916,
+                "episode_service_blocking_rate": 0.16916916916916916,
+                "bit_rate_blocking_rate": 0.24990859232175502,
+                "episode_bit_rate_blocking_rate": 0.24990859232175502,
+                "network_compactness": 0.1437761787614206,
+                "network_compactness_difference": 0.00020058977018819202,
+                "avg_link_compactness": 0.3035516803387896,
+                "avg_link_utilization": 0.40554861937691744,
+                "bit_rate_blocking_450": 0.2963709677419355,
+                "bit_rate_blocking_100": 0.0437375745526839,
+                "fairness": 0.2526333931892516
+            }
+        },
+        "28": {
+            "request_blocking": 0.17617617617617617,
+            "BW_Blocking": 0.2584067613738536,
+            "info": {
+                "service_blocking_rate": 0.17617617617617617,
+                "episode_service_blocking_rate": 0.17617617617617617,
+                "bit_rate_blocking_rate": 0.2584067613738536,
+                "episode_bit_rate_blocking_rate": 0.2584067613738536,
+                "network_compactness": 0.14481794566988068,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.2939453527779383,
+                "avg_link_utilization": 0.4329940126820708,
+                "bit_rate_blocking_450": 0.3045186640471513,
+                "bit_rate_blocking_100": 0.04285714285714286,
+                "fairness": 0.2616615211900084
+            }
+        },
+        "29": {
+            "request_blocking": 0.15915915915915915,
+            "BW_Blocking": 0.23238270469181233,
+            "info": {
+                "service_blocking_rate": 0.15915915915915915,
+                "episode_service_blocking_rate": 0.15915915915915915,
+                "bit_rate_blocking_rate": 0.23238270469181233,
+                "episode_bit_rate_blocking_rate": 0.23238270469181233,
+                "network_compactness": 0.13679989329498138,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.31990480316380965,
+                "avg_link_utilization": 0.4087143893938853,
+                "bit_rate_blocking_450": 0.27494908350305497,
+                "bit_rate_blocking_100": 0.047244094488188976,
+                "fairness": 0.227704989014866
+            }
+        },
+        "30": {
+            "request_blocking": 0.17717717717717718,
+            "BW_Blocking": 0.25307870783508835,
+            "info": {
+                "service_blocking_rate": 0.17717717717717718,
+                "episode_service_blocking_rate": 0.17717717717717718,
+                "bit_rate_blocking_rate": 0.25307870783508835,
+                "episode_bit_rate_blocking_rate": 0.25307870783508835,
+                "network_compactness": 0.1442709384915652,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3045651413375654,
+                "avg_link_utilization": 0.4316802751336143,
+                "bit_rate_blocking_450": 0.29514563106796116,
+                "bit_rate_blocking_100": 0.05165289256198347,
+                "fairness": 0.2434927385059777
+            }
+        },
+        "31": {
+            "request_blocking": 0.14414414414414414,
+            "BW_Blocking": 0.22085777126099707,
+            "info": {
+                "service_blocking_rate": 0.14414414414414414,
+                "episode_service_blocking_rate": 0.14414414414414414,
+                "bit_rate_blocking_rate": 0.22085777126099707,
+                "episode_bit_rate_blocking_rate": 0.22085777126099707,
+                "network_compactness": 0.13191351763130138,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.2900054698345202,
+                "avg_link_utilization": 0.4265473190295604,
+                "bit_rate_blocking_450": 0.2651821862348178,
+                "bit_rate_blocking_100": 0.02574257425742574,
+                "fairness": 0.23943961197739208
+            }
+        },
+        "32": {
+            "request_blocking": 0.1891891891891892,
+            "BW_Blocking": 0.28264823572208075,
+            "info": {
+                "service_blocking_rate": 0.1891891891891892,
+                "episode_service_blocking_rate": 0.1891891891891892,
+                "bit_rate_blocking_rate": 0.28264823572208075,
+                "episode_bit_rate_blocking_rate": 0.28264823572208075,
+                "network_compactness": 0.13570306050806846,
+                "network_compactness_difference": -0.0002895481508251585,
+                "avg_link_compactness": 0.29894103838780406,
+                "avg_link_utilization": 0.43131872633776036,
+                "bit_rate_blocking_450": 0.336,
+                "bit_rate_blocking_100": 0.04208416833667335,
+                "fairness": 0.2939158316633267
+            }
+        },
+        "33": {
+            "request_blocking": 0.14814814814814814,
+            "BW_Blocking": 0.2083710817177025,
+            "info": {
+                "service_blocking_rate": 0.14814814814814814,
+                "episode_service_blocking_rate": 0.14814814814814814,
+                "bit_rate_blocking_rate": 0.2083710817177025,
+                "episode_bit_rate_blocking_rate": 0.2083710817177025,
+                "network_compactness": 0.14066122257357802,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.28951033972601403,
+                "avg_link_utilization": 0.430218980852267,
+                "bit_rate_blocking_450": 0.24254473161033796,
+                "bit_rate_blocking_100": 0.05241935483870968,
+                "fairness": 0.19012537677162827
+            }
+        },
+        "34": {
+            "request_blocking": 0.18018018018018017,
+            "BW_Blocking": 0.2638839125761376,
+            "info": {
+                "service_blocking_rate": 0.18018018018018017,
+                "episode_service_blocking_rate": 0.18018018018018017,
+                "bit_rate_blocking_rate": 0.2638839125761376,
+                "episode_bit_rate_blocking_rate": 0.2638839125761376,
+                "network_compactness": 0.14781291074879374,
+                "network_compactness_difference": 0.00035980301249802227,
+                "avg_link_compactness": 0.30940409177641853,
+                "avg_link_utilization": 0.4221909639646906,
+                "bit_rate_blocking_450": 0.310546875,
+                "bit_rate_blocking_100": 0.043121149897330596,
+                "fairness": 0.2674257251026694
+            }
+        },
+        "35": {
+            "request_blocking": 0.1781781781781782,
+            "BW_Blocking": 0.25689716947330704,
+            "info": {
+                "service_blocking_rate": 0.1781781781781782,
+                "episode_service_blocking_rate": 0.1781781781781782,
+                "bit_rate_blocking_rate": 0.25689716947330704,
+                "episode_bit_rate_blocking_rate": 0.25689716947330704,
+                "network_compactness": 0.14061905554498763,
+                "network_compactness_difference": 0.0011251411849680648,
+                "avg_link_compactness": 0.31207172928542176,
+                "avg_link_utilization": 0.4330831339787244,
+                "bit_rate_blocking_450": 0.30078125,
+                "bit_rate_blocking_100": 0.049281314168377825,
+                "fairness": 0.25149993583162217
+            }
+        },
+        "36": {
+            "request_blocking": 0.19019019019019018,
+            "BW_Blocking": 0.2846663088208982,
+            "info": {
+                "service_blocking_rate": 0.19019019019019018,
+                "episode_service_blocking_rate": 0.19019019019019018,
+                "bit_rate_blocking_rate": 0.2846663088208982,
+                "episode_bit_rate_blocking_rate": 0.2846663088208982,
+                "network_compactness": 0.14188661007468362,
+                "network_compactness_difference": 0.0009824563180877433,
+                "avg_link_compactness": 0.2953369549981661,
+                "avg_link_utilization": 0.435445429580002,
+                "bit_rate_blocking_450": 0.33723196881091616,
+                "bit_rate_blocking_100": 0.03497942386831276,
+                "fairness": 0.3022525449426034
+            }
+        },
+        "37": {
+            "request_blocking": 0.17217217217217218,
+            "BW_Blocking": 0.25664511494252873,
+            "info": {
+                "service_blocking_rate": 0.17217217217217218,
+                "episode_service_blocking_rate": 0.17217217217217218,
+                "bit_rate_blocking_rate": 0.25664511494252873,
+                "episode_bit_rate_blocking_rate": 0.25664511494252873,
+                "network_compactness": 0.13020489735728974,
+                "network_compactness_difference": 0.0003101470534708217,
+                "avg_link_compactness": 0.28699268207731765,
+                "avg_link_utilization": 0.4306446118247258,
+                "bit_rate_blocking_450": 0.30392156862745096,
+                "bit_rate_blocking_100": 0.034764826175869123,
+                "fairness": 0.26915674245158183
+            }
+        },
+        "38": {
+            "request_blocking": 0.1831831831831832,
+            "BW_Blocking": 0.26370476531709064,
+            "info": {
+                "service_blocking_rate": 0.1831831831831832,
+                "episode_service_blocking_rate": 0.1831831831831832,
+                "bit_rate_blocking_rate": 0.26370476531709064,
+                "episode_bit_rate_blocking_rate": 0.26370476531709064,
+                "network_compactness": 0.15076600810377466,
+                "network_compactness_difference": 0.000275890632282616,
+                "avg_link_compactness": 0.33084827375760917,
+                "avg_link_utilization": 0.41379452403960876,
+                "bit_rate_blocking_450": 0.30859375,
+                "bit_rate_blocking_100": 0.0513347022587269,
+                "fairness": 0.2572590477412731
+            }
+        },
+        "39": {
+            "request_blocking": 0.17017017017017017,
+            "BW_Blocking": 0.26111603188662535,
+            "info": {
+                "service_blocking_rate": 0.17017017017017017,
+                "episode_service_blocking_rate": 0.17017017017017017,
+                "bit_rate_blocking_rate": 0.26111603188662535,
+                "episode_bit_rate_blocking_rate": 0.26111603188662535,
+                "network_compactness": 0.13085626785987056,
+                "network_compactness_difference": 0.0005102271946706705,
+                "avg_link_compactness": 0.3042097782434537,
+                "avg_link_utilization": 0.4179042797677587,
+                "bit_rate_blocking_450": 0.31094049904030713,
+                "bit_rate_blocking_100": 0.016736401673640166,
+                "fairness": 0.294204097366667
+            }
+        },
+        "40": {
+            "request_blocking": 0.16316316316316315,
+            "BW_Blocking": 0.2380269058295964,
+            "info": {
+                "service_blocking_rate": 0.16316316316316315,
+                "episode_service_blocking_rate": 0.16316316316316315,
+                "bit_rate_blocking_rate": 0.2380269058295964,
+                "episode_bit_rate_blocking_rate": 0.2380269058295964,
+                "network_compactness": 0.13462970349687542,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.33457854576598783,
+                "avg_link_utilization": 0.43349405149844084,
+                "bit_rate_blocking_450": 0.27984344422700586,
+                "bit_rate_blocking_100": 0.040983606557377046,
+                "fairness": 0.23885983766962882
+            }
+        },
+        "41": {
+            "request_blocking": 0.1781781781781782,
+            "BW_Blocking": 0.27308874028555935,
+            "info": {
+                "service_blocking_rate": 0.1781781781781782,
+                "episode_service_blocking_rate": 0.1781781781781782,
+                "bit_rate_blocking_rate": 0.27308874028555935,
+                "episode_bit_rate_blocking_rate": 0.27308874028555935,
+                "network_compactness": 0.13907208441649913,
+                "network_compactness_difference": 0.0009649586988737802,
+                "avg_link_compactness": 0.29256184484613723,
+                "avg_link_utilization": 0.43640646195140875,
+                "bit_rate_blocking_450": 0.32673267326732675,
+                "bit_rate_blocking_100": 0.02631578947368421,
+                "fairness": 0.3004168837936425
+            }
+        },
+        "42": {
+            "request_blocking": 0.18018018018018017,
+            "BW_Blocking": 0.27603247440875395,
+            "info": {
+                "service_blocking_rate": 0.18018018018018017,
+                "episode_service_blocking_rate": 0.18018018018018017,
+                "bit_rate_blocking_rate": 0.27603247440875395,
+                "episode_bit_rate_blocking_rate": 0.27603247440875395,
+                "network_compactness": 0.13499564665526756,
+                "network_compactness_difference": 7.930161099575783e-05,
+                "avg_link_compactness": 0.3122522040097539,
+                "avg_link_utilization": 0.4107947410174988,
+                "bit_rate_blocking_450": 0.3282442748091603,
+                "bit_rate_blocking_100": 0.016842105263157894,
+                "fairness": 0.3114021695460024
+            }
+        },
+        "43": {
+            "request_blocking": 0.1931931931931932,
+            "BW_Blocking": 0.29295114476293493,
+            "info": {
+                "service_blocking_rate": 0.1931931931931932,
+                "episode_service_blocking_rate": 0.1931931931931932,
+                "bit_rate_blocking_rate": 0.29295114476293493,
+                "episode_bit_rate_blocking_rate": 0.29295114476293493,
+                "network_compactness": 0.13738991020337762,
+                "network_compactness_difference": -0.0001611107045449145,
+                "avg_link_compactness": 0.3012619009171309,
+                "avg_link_utilization": 0.43652123227758516,
+                "bit_rate_blocking_450": 0.34911242603550297,
+                "bit_rate_blocking_100": 0.032520325203252036,
+                "fairness": 0.3165921008322509
+            }
+        },
+        "44": {
+            "request_blocking": 0.16616616616616617,
+            "BW_Blocking": 0.24625228519195613,
+            "info": {
+                "service_blocking_rate": 0.16616616616616617,
+                "episode_service_blocking_rate": 0.16616616616616617,
+                "bit_rate_blocking_rate": 0.24625228519195613,
+                "episode_bit_rate_blocking_rate": 0.24625228519195613,
+                "network_compactness": 0.13747219026353194,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.28693925072202164,
+                "avg_link_utilization": 0.43724510637326697,
+                "bit_rate_blocking_450": 0.2923387096774194,
+                "bit_rate_blocking_100": 0.041749502982107355,
+                "fairness": 0.25058920669531204
+            }
+        },
+        "45": {
+            "request_blocking": 0.17417417417417416,
+            "BW_Blocking": 0.24698034973859745,
+            "info": {
+                "service_blocking_rate": 0.17417417417417416,
+                "episode_service_blocking_rate": 0.17417417417417416,
+                "bit_rate_blocking_rate": 0.24698034973859745,
+                "episode_bit_rate_blocking_rate": 0.24698034973859745,
+                "network_compactness": 0.13469067363130724,
+                "network_compactness_difference": -0.0008040296754183163,
+                "avg_link_compactness": 0.3002779833339416,
+                "avg_link_utilization": 0.42310602400276354,
+                "bit_rate_blocking_450": 0.2879684418145957,
+                "bit_rate_blocking_100": 0.056910569105691054,
+                "fairness": 0.23105787270890463
+            }
+        },
+        "46": {
+            "request_blocking": 0.18218218218218218,
+            "BW_Blocking": 0.27234889612739777,
+            "info": {
+                "service_blocking_rate": 0.18218218218218218,
+                "episode_service_blocking_rate": 0.18218218218218218,
+                "bit_rate_blocking_rate": 0.27234889612739777,
+                "episode_bit_rate_blocking_rate": 0.27234889612739777,
+                "network_compactness": 0.12847635715734315,
+                "network_compactness_difference": -3.3980442381120746e-05,
+                "avg_link_compactness": 0.28581862521882967,
+                "avg_link_utilization": 0.43275885449346313,
+                "bit_rate_blocking_450": 0.32341269841269843,
+                "bit_rate_blocking_100": 0.03838383838383838,
+                "fairness": 0.2850288600288601
+            }
+        },
+        "47": {
+            "request_blocking": 0.15715715715715717,
+            "BW_Blocking": 0.24313212483647917,
+            "info": {
+                "service_blocking_rate": 0.15715715715715717,
+                "episode_service_blocking_rate": 0.15715715715715717,
+                "bit_rate_blocking_rate": 0.24313212483647917,
+                "episode_bit_rate_blocking_rate": 0.24313212483647917,
+                "network_compactness": 0.1338085021433053,
+                "network_compactness_difference": 0.00018077344250649885,
+                "avg_link_compactness": 0.32472513477002185,
+                "avg_link_utilization": 0.4312543986162109,
+                "bit_rate_blocking_450": 0.29436325678496866,
+                "bit_rate_blocking_100": 0.03076923076923077,
+                "fairness": 0.2635940260157379
+            }
+        },
+        "48": {
+            "request_blocking": 0.14414414414414414,
+            "BW_Blocking": 0.2382148377125193,
+            "info": {
+                "service_blocking_rate": 0.14414414414414414,
+                "episode_service_blocking_rate": 0.14414414414414414,
+                "bit_rate_blocking_rate": 0.2382148377125193,
+                "episode_bit_rate_blocking_rate": 0.2382148377125193,
+                "network_compactness": 0.13954353293628083,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3084412707668621,
+                "avg_link_utilization": 0.40510672839570805,
+                "bit_rate_blocking_450": 0.2973568281938326,
+                "bit_rate_blocking_100": 0.01651376146788991,
+                "fairness": 0.28084306672594267
+            }
+        },
+        "49": {
+            "request_blocking": 0.16016016016016016,
+            "BW_Blocking": 0.22145328719723184,
+            "info": {
+                "service_blocking_rate": 0.16016016016016016,
+                "episode_service_blocking_rate": 0.16016016016016016,
+                "bit_rate_blocking_rate": 0.22145328719723184,
+                "episode_bit_rate_blocking_rate": 0.22145328719723184,
+                "network_compactness": 0.13412955626737505,
+                "network_compactness_difference": 5.205545521372312e-05,
+                "avg_link_compactness": 0.3036725485998785,
+                "avg_link_utilization": 0.42569826245664016,
+                "bit_rate_blocking_450": 0.2565130260521042,
+                "bit_rate_blocking_100": 0.064,
+                "fairness": 0.19251302605210419
+            }
+        }
+    },
+    "800": {
+        "0": {
+            "request_blocking": 0.19019019019019018,
+            "BW_Blocking": 0.2669733210671573,
+            "info": {
+                "service_blocking_rate": 0.19019019019019018,
+                "episode_service_blocking_rate": 0.19019019019019018,
+                "bit_rate_blocking_rate": 0.2669733210671573,
+                "episode_bit_rate_blocking_rate": 0.2669733210671573,
+                "network_compactness": 0.12717222021103008,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3153238393811793,
+                "avg_link_utilization": 0.4326235442714635,
+                "bit_rate_blocking_450": 0.31160896130346233,
+                "bit_rate_blocking_100": 0.07283464566929133,
+                "fairness": 0.238774315634171
+            }
+        },
+        "1": {
+            "request_blocking": 0.1881881881881882,
+            "BW_Blocking": 0.28004410143329656,
+            "info": {
+                "service_blocking_rate": 0.1881881881881882,
+                "episode_service_blocking_rate": 0.1881881881881882,
+                "bit_rate_blocking_rate": 0.28004410143329656,
+                "episode_bit_rate_blocking_rate": 0.28004410143329656,
+                "network_compactness": 0.1346556674169535,
+                "network_compactness_difference": 0.00023979280111163792,
+                "avg_link_compactness": 0.30933957946699875,
+                "avg_link_utilization": 0.4235942662523111,
+                "bit_rate_blocking_450": 0.3333333333333333,
+                "bit_rate_blocking_100": 0.047337278106508875,
+                "fairness": 0.2859960552268244
+            }
+        },
+        "2": {
+            "request_blocking": 0.19019019019019018,
+            "BW_Blocking": 0.28051198846223185,
+            "info": {
+                "service_blocking_rate": 0.19019019019019018,
+                "episode_service_blocking_rate": 0.19019019019019018,
+                "bit_rate_blocking_rate": 0.28051198846223185,
+                "episode_bit_rate_blocking_rate": 0.28051198846223185,
+                "network_compactness": 0.13505676184383275,
+                "network_compactness_difference": 0.0007916821090444282,
+                "avg_link_compactness": 0.32420902046660116,
+                "avg_link_utilization": 0.4206150872884541,
+                "bit_rate_blocking_450": 0.33136094674556216,
+                "bit_rate_blocking_100": 0.044715447154471545,
+                "fairness": 0.2866454995910906
+            }
+        },
+        "3": {
+            "request_blocking": 0.21921921921921922,
+            "BW_Blocking": 0.3284488920657613,
+            "info": {
+                "service_blocking_rate": 0.21921921921921922,
+                "episode_service_blocking_rate": 0.21921921921921922,
+                "bit_rate_blocking_rate": 0.3284488920657613,
+                "episode_bit_rate_blocking_rate": 0.3284488920657613,
+                "network_compactness": 0.13090598652835217,
+                "network_compactness_difference": 0.00010280574858245739,
+                "avg_link_compactness": 0.2979404189232998,
+                "avg_link_utilization": 0.4305535313654169,
+                "bit_rate_blocking_450": 0.38910505836575876,
+                "bit_rate_blocking_100": 0.03917525773195876,
+                "fairness": 0.34992980063379997
+            }
+        },
+        "4": {
+            "request_blocking": 0.2022022022022022,
+            "BW_Blocking": 0.2947085201793722,
+            "info": {
+                "service_blocking_rate": 0.2022022022022022,
+                "episode_service_blocking_rate": 0.2022022022022022,
+                "bit_rate_blocking_rate": 0.2947085201793722,
+                "episode_bit_rate_blocking_rate": 0.2947085201793722,
+                "network_compactness": 0.13426250046059177,
+                "network_compactness_difference": 0.00035224981389658794,
+                "avg_link_compactness": 0.28785615133971176,
+                "avg_link_utilization": 0.43678864459078576,
+                "bit_rate_blocking_450": 0.34637964774951074,
+                "bit_rate_blocking_100": 0.05122950819672131,
+                "fairness": 0.29515013955278946
+            }
+        },
+        "5": {
+            "request_blocking": 0.1781781781781782,
+            "BW_Blocking": 0.24815595363540568,
+            "info": {
+                "service_blocking_rate": 0.1781781781781782,
+                "episode_service_blocking_rate": 0.1781781781781782,
+                "bit_rate_blocking_rate": 0.24815595363540568,
+                "episode_bit_rate_blocking_rate": 0.24815595363540568,
+                "network_compactness": 0.14101745338357002,
+                "network_compactness_difference": 0.0007629144078497851,
+                "avg_link_compactness": 0.28645378821691625,
+                "avg_link_utilization": 0.4247118693612748,
+                "bit_rate_blocking_450": 0.2859848484848485,
+                "bit_rate_blocking_100": 0.05732484076433121,
+                "fairness": 0.2286600077205173
+            }
+        },
+        "6": {
+            "request_blocking": 0.17717717717717718,
+            "BW_Blocking": 0.2515460167333576,
+            "info": {
+                "service_blocking_rate": 0.17717717717717718,
+                "episode_service_blocking_rate": 0.17717717717717718,
+                "bit_rate_blocking_rate": 0.2515460167333576,
+                "episode_bit_rate_blocking_rate": 0.2515460167333576,
+                "network_compactness": 0.1346666377759962,
+                "network_compactness_difference": 0.00015578762135162738,
+                "avg_link_compactness": 0.2797656412489911,
+                "avg_link_utilization": 0.4323894626913208,
+                "bit_rate_blocking_450": 0.294,
+                "bit_rate_blocking_100": 0.06012024048096192,
+                "fairness": 0.23387975951903806
+            }
+        },
+        "7": {
+            "request_blocking": 0.16016016016016016,
+            "BW_Blocking": 0.2362190493403217,
+            "info": {
+                "service_blocking_rate": 0.16016016016016016,
+                "episode_service_blocking_rate": 0.16016016016016016,
+                "bit_rate_blocking_rate": 0.2362190493403217,
+                "episode_bit_rate_blocking_rate": 0.2362190493403217,
+                "network_compactness": 0.13115869577292674,
+                "network_compactness_difference": -0.00040514113848527655,
+                "avg_link_compactness": 0.27957210057221193,
+                "avg_link_utilization": 0.437862439282582,
+                "bit_rate_blocking_450": 0.27920792079207923,
+                "bit_rate_blocking_100": 0.038461538461538464,
+                "fairness": 0.24074638233054077
+            }
+        },
+        "8": {
+            "request_blocking": 0.1971971971971972,
+            "BW_Blocking": 0.2864602088584804,
+            "info": {
+                "service_blocking_rate": 0.1971971971971972,
+                "episode_service_blocking_rate": 0.1971971971971972,
+                "bit_rate_blocking_rate": 0.2864602088584804,
+                "episode_bit_rate_blocking_rate": 0.2864602088584804,
+                "network_compactness": 0.13395470491769249,
+                "network_compactness_difference": 0.00028004467927042476,
+                "avg_link_compactness": 0.3488073688571673,
+                "avg_link_utilization": 0.4317823053209085,
+                "bit_rate_blocking_450": 0.33661417322834647,
+                "bit_rate_blocking_100": 0.05295315682281059,
+                "fairness": 0.28366101640553587
+            }
+        },
+        "9": {
+            "request_blocking": 0.2012012012012012,
+            "BW_Blocking": 0.2923022348350479,
+            "info": {
+                "service_blocking_rate": 0.2012012012012012,
+                "episode_service_blocking_rate": 0.2012012012012012,
+                "bit_rate_blocking_rate": 0.2923022348350479,
+                "episode_bit_rate_blocking_rate": 0.2923022348350479,
+                "network_compactness": 0.13333703456954624,
+                "network_compactness_difference": -7.571290823510379e-05,
+                "avg_link_compactness": 0.2978280460028218,
+                "avg_link_utilization": 0.409427005263138,
+                "bit_rate_blocking_450": 0.3423076923076923,
+                "bit_rate_blocking_100": 0.04801670146137787,
+                "fairness": 0.29429099084631444
+            }
+        },
+        "10": {
+            "request_blocking": 0.19019019019019018,
+            "BW_Blocking": 0.28446069469835467,
+            "info": {
+                "service_blocking_rate": 0.19019019019019018,
+                "episode_service_blocking_rate": 0.19019019019019018,
+                "bit_rate_blocking_rate": 0.28446069469835467,
+                "episode_bit_rate_blocking_rate": 0.28446069469835467,
+                "network_compactness": 0.12867983642910913,
+                "network_compactness_difference": 0.0003412353127263401,
+                "avg_link_compactness": 0.2850837318766251,
+                "avg_link_utilization": 0.4151557700311182,
+                "bit_rate_blocking_450": 0.3387096774193548,
+                "bit_rate_blocking_100": 0.0437375745526839,
+                "fairness": 0.2949721028666709
+            }
+        },
+        "11": {
+            "request_blocking": 0.1881881881881882,
+            "BW_Blocking": 0.2732464751026236,
+            "info": {
+                "service_blocking_rate": 0.1881881881881882,
+                "episode_service_blocking_rate": 0.1881881881881882,
+                "bit_rate_blocking_rate": 0.2732464751026236,
+                "episode_bit_rate_blocking_rate": 0.2732464751026236,
+                "network_compactness": 0.1398139909325876,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3223994066132485,
+                "avg_link_utilization": 0.42233955983359905,
+                "bit_rate_blocking_450": 0.32038834951456313,
+                "bit_rate_blocking_100": 0.047520661157024795,
+                "fairness": 0.27286768835753833
+            }
+        },
+        "12": {
+            "request_blocking": 0.2012012012012012,
+            "BW_Blocking": 0.28024193548387094,
+            "info": {
+                "service_blocking_rate": 0.2012012012012012,
+                "episode_service_blocking_rate": 0.2012012012012012,
+                "bit_rate_blocking_rate": 0.28024193548387094,
+                "episode_bit_rate_blocking_rate": 0.28024193548387094,
+                "network_compactness": 0.14279954418781263,
+                "network_compactness_difference": 0.0008863808980514032,
+                "avg_link_compactness": 0.2988029482625025,
+                "avg_link_utilization": 0.42779360787180853,
+                "bit_rate_blocking_450": 0.3259109311740891,
+                "bit_rate_blocking_100": 0.07920792079207921,
+                "fairness": 0.24670301038200987
+            }
+        },
+        "13": {
+            "request_blocking": 0.20520520520520522,
+            "BW_Blocking": 0.29486737857388906,
+            "info": {
+                "service_blocking_rate": 0.20520520520520522,
+                "episode_service_blocking_rate": 0.20520520520520522,
+                "bit_rate_blocking_rate": 0.29486737857388906,
+                "episode_bit_rate_blocking_rate": 0.29486737857388906,
+                "network_compactness": 0.14173921073992524,
+                "network_compactness_difference": 0.00043428021530356187,
+                "avg_link_compactness": 0.3159015086258598,
+                "avg_link_utilization": 0.4354277332938379,
+                "bit_rate_blocking_450": 0.34191176470588236,
+                "bit_rate_blocking_100": 0.041758241758241756,
+                "fairness": 0.3001535229476406
+            }
+        },
+        "14": {
+            "request_blocking": 0.17617617617617617,
+            "BW_Blocking": 0.2639141506002183,
+            "info": {
+                "service_blocking_rate": 0.17617617617617617,
+                "episode_service_blocking_rate": 0.17617617617617617,
+                "bit_rate_blocking_rate": 0.2639141506002183,
+                "episode_bit_rate_blocking_rate": 0.2639141506002183,
+                "network_compactness": 0.13508381019901755,
+                "network_compactness_difference": 0.00040677492428645157,
+                "avg_link_compactness": 0.29277217349979456,
+                "avg_link_utilization": 0.4372285629916988,
+                "bit_rate_blocking_450": 0.314,
+                "bit_rate_blocking_100": 0.03807615230460922,
+                "fairness": 0.2759238476953908
+            }
+        },
+        "15": {
+            "request_blocking": 0.16816816816816818,
+            "BW_Blocking": 0.24576881526827513,
+            "info": {
+                "service_blocking_rate": 0.16816816816816818,
+                "episode_service_blocking_rate": 0.16816816816816818,
+                "bit_rate_blocking_rate": 0.24576881526827513,
+                "episode_bit_rate_blocking_rate": 0.24576881526827513,
+                "network_compactness": 0.13185528307229125,
+                "network_compactness_difference": 0.001082286584614095,
+                "avg_link_compactness": 0.3314400595133563,
+                "avg_link_utilization": 0.41425005434768963,
+                "bit_rate_blocking_450": 0.28937007874015747,
+                "bit_rate_blocking_100": 0.04276985743380855,
+                "fairness": 0.2466002213063489
+            }
+        },
+        "16": {
+            "request_blocking": 0.17717717717717718,
+            "BW_Blocking": 0.27671333824613115,
+            "info": {
+                "service_blocking_rate": 0.17717717717717718,
+                "episode_service_blocking_rate": 0.17717717717717718,
+                "bit_rate_blocking_rate": 0.27671333824613115,
+                "episode_bit_rate_blocking_rate": 0.27671333824613115,
+                "network_compactness": 0.13583228085980673,
+                "network_compactness_difference": 0.0010501994391677316,
+                "avg_link_compactness": 0.2923469674472302,
+                "avg_link_utilization": 0.42007152788463575,
+                "bit_rate_blocking_450": 0.3346938775510204,
+                "bit_rate_blocking_100": 0.025540275049115914,
+                "fairness": 0.3091536025019045
+            }
+        },
+        "17": {
+            "request_blocking": 0.17017017017017017,
+            "BW_Blocking": 0.23598217601188265,
+            "info": {
+                "service_blocking_rate": 0.17017017017017017,
+                "episode_service_blocking_rate": 0.17017017017017017,
+                "bit_rate_blocking_rate": 0.23598217601188265,
+                "episode_bit_rate_blocking_rate": 0.23598217601188265,
+                "network_compactness": 0.13252196915584777,
+                "network_compactness_difference": 0.0003047916412562135,
+                "avg_link_compactness": 0.3351483287720544,
+                "avg_link_utilization": 0.4271475686687773,
+                "bit_rate_blocking_450": 0.27479338842975204,
+                "bit_rate_blocking_100": 0.07184466019417475,
+                "fairness": 0.2029487282355773
+            }
+        },
+        "18": {
+            "request_blocking": 0.1991991991991992,
+            "BW_Blocking": 0.2883934890304317,
+            "info": {
+                "service_blocking_rate": 0.1991991991991992,
+                "episode_service_blocking_rate": 0.1991991991991992,
+                "bit_rate_blocking_rate": 0.2883934890304317,
+                "episode_bit_rate_blocking_rate": 0.2883934890304317,
+                "network_compactness": 0.1309222515603373,
+                "network_compactness_difference": 0.0008832958248030098,
+                "avg_link_compactness": 0.2843159227589493,
+                "avg_link_utilization": 0.4358701856396422,
+                "bit_rate_blocking_450": 0.3371647509578544,
+                "bit_rate_blocking_100": 0.04821802935010482,
+                "fairness": 0.2889467216077496
+            }
+        },
+        "19": {
+            "request_blocking": 0.17517517517517517,
+            "BW_Blocking": 0.2670299727520436,
+            "info": {
+                "service_blocking_rate": 0.17517517517517517,
+                "episode_service_blocking_rate": 0.17517517517517517,
+                "bit_rate_blocking_rate": 0.2670299727520436,
+                "episode_bit_rate_blocking_rate": 0.2670299727520436,
+                "network_compactness": 0.1510369598495048,
+                "network_compactness_difference": 0.0004119938893876185,
+                "avg_link_compactness": 0.32183923373444084,
+                "avg_link_utilization": 0.41952065152760903,
+                "bit_rate_blocking_450": 0.3193612774451098,
+                "bit_rate_blocking_100": 0.030120481927710843,
+                "fairness": 0.28924079551739895
+            }
+        },
+        "20": {
+            "request_blocking": 0.17317317317317318,
+            "BW_Blocking": 0.2633623081191049,
+            "info": {
+                "service_blocking_rate": 0.17317317317317318,
+                "episode_service_blocking_rate": 0.17317317317317318,
+                "bit_rate_blocking_rate": 0.2633623081191049,
+                "episode_bit_rate_blocking_rate": 0.2633623081191049,
+                "network_compactness": 0.1369134473379026,
+                "network_compactness_difference": 0.0001894471389759511,
+                "avg_link_compactness": 0.27721318319333943,
+                "avg_link_utilization": 0.4332651281546959,
+                "bit_rate_blocking_450": 0.3162217659137577,
+                "bit_rate_blocking_100": 0.037109375,
+                "fairness": 0.2791123909137577
+            }
+        },
+        "21": {
+            "request_blocking": 0.17917917917917917,
+            "BW_Blocking": 0.2627936623565835,
+            "info": {
+                "service_blocking_rate": 0.17917917917917917,
+                "episode_service_blocking_rate": 0.17917917917917917,
+                "bit_rate_blocking_rate": 0.2627936623565835,
+                "episode_bit_rate_blocking_rate": 0.2627936623565835,
+                "network_compactness": 0.12780432185618223,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3199479877902237,
+                "avg_link_utilization": 0.43578390260737426,
+                "bit_rate_blocking_450": 0.3106212424849699,
+                "bit_rate_blocking_100": 0.048,
+                "fairness": 0.26262124248496993
+            }
+        },
+        "22": {
+            "request_blocking": 0.17117117117117117,
+            "BW_Blocking": 0.25600457491422035,
+            "info": {
+                "service_blocking_rate": 0.17117117117117117,
+                "episode_service_blocking_rate": 0.17117117117117117,
+                "bit_rate_blocking_rate": 0.25600457491422035,
+                "episode_bit_rate_blocking_rate": 0.25600457491422035,
+                "network_compactness": 0.12535296490520373,
+                "network_compactness_difference": 7.501436577056486e-05,
+                "avg_link_compactness": 0.2929599062081865,
+                "avg_link_utilization": 0.42741858314325215,
+                "bit_rate_blocking_450": 0.3081896551724138,
+                "bit_rate_blocking_100": 0.052336448598130844,
+                "fairness": 0.25585320657428295
+            }
+        },
+        "23": {
+            "request_blocking": 0.19119119119119118,
+            "BW_Blocking": 0.275222816399287,
+            "info": {
+                "service_blocking_rate": 0.19119119119119118,
+                "episode_service_blocking_rate": 0.19119119119119118,
+                "bit_rate_blocking_rate": 0.275222816399287,
+                "episode_bit_rate_blocking_rate": 0.275222816399287,
+                "network_compactness": 0.1430489882049517,
+                "network_compactness_difference": 6.143986162035486e-05,
+                "avg_link_compactness": 0.30953558068724496,
+                "avg_link_utilization": 0.42951627827136607,
+                "bit_rate_blocking_450": 0.32170542635658916,
+                "bit_rate_blocking_100": 0.051759834368530024,
+                "fairness": 0.2699455919880591
+            }
+        },
+        "24": {
+            "request_blocking": 0.16916916916916916,
+            "BW_Blocking": 0.23545604698109746,
+            "info": {
+                "service_blocking_rate": 0.16916916916916916,
+                "episode_service_blocking_rate": 0.16916916916916916,
+                "bit_rate_blocking_rate": 0.23545604698109746,
+                "episode_bit_rate_blocking_rate": 0.23545604698109746,
+                "network_compactness": 0.13305655953892742,
+                "network_compactness_difference": -3.808391711038195e-05,
+                "avg_link_compactness": 0.30830065434992976,
+                "avg_link_utilization": 0.4348268906819893,
+                "bit_rate_blocking_450": 0.2738336713995943,
+                "bit_rate_blocking_100": 0.06719367588932806,
+                "fairness": 0.20663999551026624
+            }
+        },
+        "25": {
+            "request_blocking": 0.19519519519519518,
+            "BW_Blocking": 0.27048138056312443,
+            "info": {
+                "service_blocking_rate": 0.19519519519519518,
+                "episode_service_blocking_rate": 0.19519519519519518,
+                "bit_rate_blocking_rate": 0.27048138056312443,
+                "episode_bit_rate_blocking_rate": 0.27048138056312443,
+                "network_compactness": 0.13036943517600025,
+                "network_compactness_difference": 0.000754270270469537,
+                "avg_link_compactness": 0.3200288668107526,
+                "avg_link_utilization": 0.40973747936699145,
+                "bit_rate_blocking_450": 0.313373253493014,
+                "bit_rate_blocking_100": 0.07630522088353414,
+                "fairness": 0.23706803260947984
+            }
+        },
+        "26": {
+            "request_blocking": 0.17117117117117117,
+            "BW_Blocking": 0.2624113475177305,
+            "info": {
+                "service_blocking_rate": 0.17117117117117117,
+                "episode_service_blocking_rate": 0.17117117117117117,
+                "bit_rate_blocking_rate": 0.2624113475177305,
+                "episode_bit_rate_blocking_rate": 0.2624113475177305,
+                "network_compactness": 0.13166974850386673,
+                "network_compactness_difference": 0.000526821085188145,
+                "avg_link_compactness": 0.3024997684892788,
+                "avg_link_utilization": 0.41846586519177903,
+                "bit_rate_blocking_450": 0.31666666666666665,
+                "bit_rate_blocking_100": 0.036608863198458574,
+                "fairness": 0.2800578034682081
+            }
+        },
+        "27": {
+            "request_blocking": 0.18118118118118118,
+            "BW_Blocking": 0.2683729433272395,
+            "info": {
+                "service_blocking_rate": 0.18118118118118118,
+                "episode_service_blocking_rate": 0.18118118118118118,
+                "bit_rate_blocking_rate": 0.2683729433272395,
+                "episode_bit_rate_blocking_rate": 0.2683729433272395,
+                "network_compactness": 0.14483539417967037,
+                "network_compactness_difference": -0.00015767719629816712,
+                "avg_link_compactness": 0.31763466224189685,
+                "avg_link_utilization": 0.41180000424764596,
+                "bit_rate_blocking_450": 0.3185483870967742,
+                "bit_rate_blocking_100": 0.04572564612326044,
+                "fairness": 0.2728227409735138
+            }
+        },
+        "28": {
+            "request_blocking": 0.17517517517517517,
+            "BW_Blocking": 0.2618234130552059,
+            "info": {
+                "service_blocking_rate": 0.17517517517517517,
+                "episode_service_blocking_rate": 0.17517517517517517,
+                "bit_rate_blocking_rate": 0.2618234130552059,
+                "episode_bit_rate_blocking_rate": 0.2618234130552059,
+                "network_compactness": 0.13918106997890056,
+                "network_compactness_difference": 0.0005433223291304023,
+                "avg_link_compactness": 0.28374840127335615,
+                "avg_link_utilization": 0.44623328786884725,
+                "bit_rate_blocking_450": 0.3104125736738703,
+                "bit_rate_blocking_100": 0.03469387755102041,
+                "fairness": 0.27571869612284994
+            }
+        },
+        "29": {
+            "request_blocking": 0.16616616616616617,
+            "BW_Blocking": 0.2529898804047838,
+            "info": {
+                "service_blocking_rate": 0.16616616616616617,
+                "episode_service_blocking_rate": 0.16616616616616617,
+                "bit_rate_blocking_rate": 0.2529898804047838,
+                "episode_bit_rate_blocking_rate": 0.2529898804047838,
+                "network_compactness": 0.1268977905333658,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3144824059746637,
+                "avg_link_utilization": 0.412146970590154,
+                "bit_rate_blocking_450": 0.3034623217922607,
+                "bit_rate_blocking_100": 0.03346456692913386,
+                "fairness": 0.2699977548631268
+            }
+        },
+        "30": {
+            "request_blocking": 0.18018018018018017,
+            "BW_Blocking": 0.2741388541852579,
+            "info": {
+                "service_blocking_rate": 0.18018018018018017,
+                "episode_service_blocking_rate": 0.18018018018018017,
+                "bit_rate_blocking_rate": 0.2741388541852579,
+                "episode_bit_rate_blocking_rate": 0.2741388541852579,
+                "network_compactness": 0.12985834688851491,
+                "network_compactness_difference": -8.006305053750995e-05,
+                "avg_link_compactness": 0.2890150659162543,
+                "avg_link_utilization": 0.43793273846174685,
+                "bit_rate_blocking_450": 0.3262135922330097,
+                "bit_rate_blocking_100": 0.024793388429752067,
+                "fairness": 0.3014202038032576
+            }
+        },
+        "31": {
+            "request_blocking": 0.15515515515515516,
+            "BW_Blocking": 0.23387096774193547,
+            "info": {
+                "service_blocking_rate": 0.15515515515515516,
+                "episode_service_blocking_rate": 0.15515515515515516,
+                "bit_rate_blocking_rate": 0.23387096774193547,
+                "episode_bit_rate_blocking_rate": 0.23387096774193547,
+                "network_compactness": 0.13153121408510596,
+                "network_compactness_difference": 0.0010651025048526719,
+                "avg_link_compactness": 0.2854992497727693,
+                "avg_link_utilization": 0.42401796163299693,
+                "bit_rate_blocking_450": 0.2793522267206478,
+                "bit_rate_blocking_100": 0.033663366336633666,
+                "fairness": 0.24568886038401413
+            }
+        },
+        "32": {
+            "request_blocking": 0.21421421421421422,
+            "BW_Blocking": 0.3070207348126591,
+            "info": {
+                "service_blocking_rate": 0.21421421421421422,
+                "episode_service_blocking_rate": 0.21421421421421422,
+                "bit_rate_blocking_rate": 0.3070207348126591,
+                "episode_bit_rate_blocking_rate": 0.3070207348126591,
+                "network_compactness": 0.13946866421274562,
+                "network_compactness_difference": 0.00010758703847726925,
+                "avg_link_compactness": 0.3107161755068936,
+                "avg_link_utilization": 0.4339765432458762,
+                "bit_rate_blocking_450": 0.36,
+                "bit_rate_blocking_100": 0.06813627254509018,
+                "fairness": 0.2918637274549098
+            }
+        },
+        "33": {
+            "request_blocking": 0.15815815815815815,
+            "BW_Blocking": 0.23736184091320892,
+            "info": {
+                "service_blocking_rate": 0.15815815815815815,
+                "episode_service_blocking_rate": 0.15815815815815815,
+                "bit_rate_blocking_rate": 0.23736184091320892,
+                "episode_bit_rate_blocking_rate": 0.23736184091320892,
+                "network_compactness": 0.13402649018243074,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.2843696946683389,
+                "avg_link_utilization": 0.43182118134585196,
+                "bit_rate_blocking_450": 0.2823061630218688,
+                "bit_rate_blocking_100": 0.03225806451612903,
+                "fairness": 0.2500480985057397
+            }
+        },
+        "34": {
+            "request_blocking": 0.1891891891891892,
+            "BW_Blocking": 0.28968111787889644,
+            "info": {
+                "service_blocking_rate": 0.1891891891891892,
+                "episode_service_blocking_rate": 0.1891891891891892,
+                "bit_rate_blocking_rate": 0.28968111787889644,
+                "episode_bit_rate_blocking_rate": 0.28968111787889644,
+                "network_compactness": 0.1309995727307254,
+                "network_compactness_difference": 0.0005193450688451839,
+                "avg_link_compactness": 0.3206689820556258,
+                "avg_link_utilization": 0.4260129824390759,
+                "bit_rate_blocking_450": 0.345703125,
+                "bit_rate_blocking_100": 0.024640657084188913,
+                "fairness": 0.3210624679158111
+            }
+        },
+        "35": {
+            "request_blocking": 0.1881881881881882,
+            "BW_Blocking": 0.2755284844141885,
+            "info": {
+                "service_blocking_rate": 0.1881881881881882,
+                "episode_service_blocking_rate": 0.1881881881881882,
+                "bit_rate_blocking_rate": 0.2755284844141885,
+                "episode_bit_rate_blocking_rate": 0.2755284844141885,
+                "network_compactness": 0.13120586988182809,
+                "network_compactness_difference": -0.00015044951945145102,
+                "avg_link_compactness": 0.29214034808234846,
+                "avg_link_utilization": 0.4409836833017439,
+                "bit_rate_blocking_450": 0.32421875,
+                "bit_rate_blocking_100": 0.045174537987679675,
+                "fairness": 0.2790442120123203
+            }
+        },
+        "36": {
+            "request_blocking": 0.1831831831831832,
+            "BW_Blocking": 0.2784040078726069,
+            "info": {
+                "service_blocking_rate": 0.1831831831831832,
+                "episode_service_blocking_rate": 0.1831831831831832,
+                "bit_rate_blocking_rate": 0.2784040078726069,
+                "episode_bit_rate_blocking_rate": 0.2784040078726069,
+                "network_compactness": 0.13144430239226396,
+                "network_compactness_difference": 0.0003181915427190596,
+                "avg_link_compactness": 0.283972950319245,
+                "avg_link_utilization": 0.43906215888307426,
+                "bit_rate_blocking_450": 0.3313840155945419,
+                "bit_rate_blocking_100": 0.026748971193415638,
+                "fairness": 0.30463504440112626
+            }
+        },
+        "37": {
+            "request_blocking": 0.18218218218218218,
+            "BW_Blocking": 0.2614942528735632,
+            "info": {
+                "service_blocking_rate": 0.18218218218218218,
+                "episode_service_blocking_rate": 0.18218218218218218,
+                "bit_rate_blocking_rate": 0.2614942528735632,
+                "episode_bit_rate_blocking_rate": 0.2614942528735632,
+                "network_compactness": 0.12562569313311153,
+                "network_compactness_difference": 0.00012129504872399055,
+                "avg_link_compactness": 0.27569078293294574,
+                "avg_link_utilization": 0.44164629981606646,
+                "bit_rate_blocking_450": 0.3058823529411765,
+                "bit_rate_blocking_100": 0.053169734151329244,
+                "fairness": 0.25271261878984724
+            }
+        },
+        "38": {
+            "request_blocking": 0.18018018018018017,
+            "BW_Blocking": 0.26137585094948046,
+            "info": {
+                "service_blocking_rate": 0.18018018018018017,
+                "episode_service_blocking_rate": 0.18018018018018017,
+                "bit_rate_blocking_rate": 0.26137585094948046,
+                "episode_bit_rate_blocking_rate": 0.26137585094948046,
+                "network_compactness": 0.13160240703451398,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.31197454438644173,
+                "avg_link_utilization": 0.428970692841131,
+                "bit_rate_blocking_450": 0.306640625,
+                "bit_rate_blocking_100": 0.04722792607802875,
+                "fairness": 0.2594126989219713
+            }
+        },
+        "39": {
+            "request_blocking": 0.17617617617617617,
+            "BW_Blocking": 0.2657218777679362,
+            "info": {
+                "service_blocking_rate": 0.17617617617617617,
+                "episode_service_blocking_rate": 0.17617617617617617,
+                "bit_rate_blocking_rate": 0.2657218777679362,
+                "episode_bit_rate_blocking_rate": 0.2657218777679362,
+                "network_compactness": 0.13482347015334534,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.3056993996285505,
+                "avg_link_utilization": 0.4204959758517571,
+                "bit_rate_blocking_450": 0.31477927063339733,
+                "bit_rate_blocking_100": 0.02510460251046025,
+                "fairness": 0.2896746681229371
+            }
+        },
+        "40": {
+            "request_blocking": 0.18018018018018017,
+            "BW_Blocking": 0.24538116591928252,
+            "info": {
+                "service_blocking_rate": 0.18018018018018017,
+                "episode_service_blocking_rate": 0.18018018018018017,
+                "bit_rate_blocking_rate": 0.24538116591928252,
+                "episode_bit_rate_blocking_rate": 0.24538116591928252,
+                "network_compactness": 0.14321615647803312,
+                "network_compactness_difference": 0.0007821066340486516,
+                "avg_link_compactness": 0.2964583528431458,
+                "avg_link_utilization": 0.4457018585217263,
+                "bit_rate_blocking_450": 0.28180039138943247,
+                "bit_rate_blocking_100": 0.07377049180327869,
+                "fairness": 0.20802989958615378
+            }
+        },
+        "41": {
+            "request_blocking": 0.1971971971971972,
+            "BW_Blocking": 0.29766853424905115,
+            "info": {
+                "service_blocking_rate": 0.1971971971971972,
+                "episode_service_blocking_rate": 0.1971971971971972,
+                "bit_rate_blocking_rate": 0.29766853424905115,
+                "episode_bit_rate_blocking_rate": 0.29766853424905115,
+                "network_compactness": 0.14476965315735119,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.29858827149057404,
+                "avg_link_utilization": 0.4384611980219276,
+                "bit_rate_blocking_450": 0.35445544554455444,
+                "bit_rate_blocking_100": 0.03643724696356275,
+                "fairness": 0.3180181985809917
+            }
+        },
+        "42": {
+            "request_blocking": 0.1931931931931932,
+            "BW_Blocking": 0.27815037063183906,
+            "info": {
+                "service_blocking_rate": 0.1931931931931932,
+                "episode_service_blocking_rate": 0.1931931931931932,
+                "bit_rate_blocking_rate": 0.27815037063183906,
+                "episode_bit_rate_blocking_rate": 0.27815037063183906,
+                "network_compactness": 0.14097964724237322,
+                "network_compactness_difference": 8.316930358104324e-05,
+                "avg_link_compactness": 0.3047275312509944,
+                "avg_link_utilization": 0.41965567541535986,
+                "bit_rate_blocking_450": 0.3244274809160305,
+                "bit_rate_blocking_100": 0.04842105263157895,
+                "fairness": 0.27600642828445154
+            }
+        },
+        "43": {
+            "request_blocking": 0.2062062062062062,
+            "BW_Blocking": 0.29006670272219215,
+            "info": {
+                "service_blocking_rate": 0.2062062062062062,
+                "episode_service_blocking_rate": 0.2062062062062062,
+                "bit_rate_blocking_rate": 0.29006670272219215,
+                "episode_bit_rate_blocking_rate": 0.29006670272219215,
+                "network_compactness": 0.14313524522173687,
+                "network_compactness_difference": 0.0005002690088280748,
+                "avg_link_compactness": 0.31058311275397876,
+                "avg_link_utilization": 0.44814015993468154,
+                "bit_rate_blocking_450": 0.33727810650887574,
+                "bit_rate_blocking_100": 0.07113821138211382,
+                "fairness": 0.26613989512676195
+            }
+        },
+        "44": {
+            "request_blocking": 0.17517517517517517,
+            "BW_Blocking": 0.25978062157221204,
+            "info": {
+                "service_blocking_rate": 0.17517517517517517,
+                "episode_service_blocking_rate": 0.17517517517517517,
+                "bit_rate_blocking_rate": 0.25978062157221204,
+                "episode_bit_rate_blocking_rate": 0.25978062157221204,
+                "network_compactness": 0.13119561732285207,
+                "network_compactness_difference": 0.0005315867800763652,
+                "avg_link_compactness": 0.28135556758786173,
+                "avg_link_utilization": 0.44410195725403073,
+                "bit_rate_blocking_450": 0.3084677419354839,
+                "bit_rate_blocking_100": 0.0437375745526839,
+                "fairness": 0.2647301673828
+            }
+        },
+        "45": {
+            "request_blocking": 0.2002002002002002,
+            "BW_Blocking": 0.27780782404903553,
+            "info": {
+                "service_blocking_rate": 0.2002002002002002,
+                "episode_service_blocking_rate": 0.2002002002002002,
+                "bit_rate_blocking_rate": 0.27780782404903553,
+                "episode_bit_rate_blocking_rate": 0.27780782404903553,
+                "network_compactness": 0.1286994895330381,
+                "network_compactness_difference": 0.0005096793813695322,
+                "avg_link_compactness": 0.3034126880330178,
+                "avg_link_utilization": 0.42458318927088223,
+                "bit_rate_blocking_450": 0.3214990138067061,
+                "bit_rate_blocking_100": 0.07520325203252033,
+                "fairness": 0.24629576177418577
+            }
+        },
+        "46": {
+            "request_blocking": 0.1921921921921922,
+            "BW_Blocking": 0.29623597538906987,
+            "info": {
+                "service_blocking_rate": 0.1921921921921922,
+                "episode_service_blocking_rate": 0.1921921921921922,
+                "bit_rate_blocking_rate": 0.29623597538906987,
+                "episode_bit_rate_blocking_rate": 0.29623597538906987,
+                "network_compactness": 0.11967832284570902,
+                "network_compactness_difference": 0.00045233313388498564,
+                "avg_link_compactness": 0.27301032303612144,
+                "avg_link_utilization": 0.4321422718947651,
+                "bit_rate_blocking_450": 0.3551587301587302,
+                "bit_rate_blocking_100": 0.026262626262626262,
+                "fairness": 0.3288961038961039
+            }
+        },
+        "47": {
+            "request_blocking": 0.1831831831831832,
+            "BW_Blocking": 0.268547934965427,
+            "info": {
+                "service_blocking_rate": 0.1831831831831832,
+                "episode_service_blocking_rate": 0.1831831831831832,
+                "bit_rate_blocking_rate": 0.268547934965427,
+                "episode_bit_rate_blocking_rate": 0.268547934965427,
+                "network_compactness": 0.1375608190295986,
+                "network_compactness_difference": 0.00018616973748761256,
+                "avg_link_compactness": 0.32372492366687794,
+                "avg_link_utilization": 0.4343474591751889,
+                "bit_rate_blocking_450": 0.31941544885177453,
+                "bit_rate_blocking_100": 0.057692307692307696,
+                "fairness": 0.2617231411594668
+            }
+        },
+        "48": {
+            "request_blocking": 0.16616616616616617,
+            "BW_Blocking": 0.2561823802163833,
+            "info": {
+                "service_blocking_rate": 0.16616616616616617,
+                "episode_service_blocking_rate": 0.16616616616616617,
+                "bit_rate_blocking_rate": 0.2561823802163833,
+                "episode_bit_rate_blocking_rate": 0.2561823802163833,
+                "network_compactness": 0.13595586968431608,
+                "network_compactness_difference": 0.0,
+                "avg_link_compactness": 0.28972740725546836,
+                "avg_link_utilization": 0.4175314882532996,
+                "bit_rate_blocking_450": 0.31277533039647576,
+                "bit_rate_blocking_100": 0.044036697247706424,
+                "fairness": 0.26873863314876933
+            }
+        },
+        "49": {
+            "request_blocking": 0.16916916916916916,
+            "BW_Blocking": 0.2476780185758514,
+            "info": {
+                "service_blocking_rate": 0.16916916916916916,
+                "episode_service_blocking_rate": 0.16916916916916916,
+                "bit_rate_blocking_rate": 0.2476780185758514,
+                "episode_bit_rate_blocking_rate": 0.2476780185758514,
+                "network_compactness": 0.13402563108151536,
+                "network_compactness_difference": 2.005958070394609e-05,
+                "avg_link_compactness": 0.31303641508097624,
+                "avg_link_utilization": 0.4300308105812205,
+                "bit_rate_blocking_450": 0.2925851703406814,
+                "bit_rate_blocking_100": 0.046,
+                "fairness": 0.2465851703406814
+            }
+        }
+    }
+}

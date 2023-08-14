@@ -12,15 +12,16 @@ from optical_rl_gym.envs.rmsa_env import (
     shortest_available_path_first_fit,
     shortest_path_first_fit,
     least_congested_path_first_fit,
+    least_congested_path_KSP_first_fit,
 )
 from optical_rl_gym.utils import evaluate_heuristic, random_policy
 
 output = {}
-with open("data.json", "w") as file:
+with open("rmsa_results_EU_5ksp_least_congested.json", "w") as file:
     # Load the existing JSON data
     json.dump(output, file)
 
-for load in range(50, 801, 50):
+for load in range(700, 801, 50):
 #load = 300
 
     logging.getLogger("rmsaenv").setLevel(logging.INFO)
@@ -42,7 +43,7 @@ for load in range(50, 801, 50):
     output.update({load:{}})
     for seeds_cnt in range(seed):
         with open(
-            os.path.join( "examples", "topologies", "europe_network_10-paths_1-modulations.h5"), "rb"
+            os.path.join( "examples", "topologies", "europe_network_5-paths_1-modulations.h5"), "rb"
         ) as f:
             topology = pickle.load(f)
 
@@ -61,14 +62,15 @@ for load in range(50, 801, 50):
         seeds = [seeds_cnt]#list(range(0,episodes,1))
         init_env = gym.make("RMSA-v0", **env_args)
         env_rnd = SimpleMatrixObservation(init_env)
-        mean_reward_rnd, std_reward_rnd, blocking, BW_blocking = evaluate_heuristic(
-            env_rnd, least_congested_path_first_fit, n_eval_episodes=episodes, seeds = seeds
+        mean_reward_rnd, std_reward_rnd, blocking, BW_blocking, info = evaluate_heuristic(
+            env_rnd, least_congested_path_KSP_first_fit, n_eval_episodes=episodes, seeds = seeds
         )
         output[load].update({seeds_cnt:{
                         'request_blocking':blocking,
-                        'BW_Blocking': BW_blocking
+                        'BW_Blocking': BW_blocking,
+                        'info': info
         }})
-        with open("data.json", "w") as file:
+        with open("rmsa_results_EU_5ksp_least_congested.json", "w") as file:
         # Write the updated data back to the file
             json.dump(output, file, indent=4)
     

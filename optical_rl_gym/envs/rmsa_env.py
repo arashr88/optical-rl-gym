@@ -276,10 +276,10 @@ class RMSAEnv(OpticalNetworkEnv):
             self.observation(),
             reward,
             self.episode_services_processed == self.episode_length,
-            False,
             info,
         )
 
+        
     def reset(self, only_episode_counters=True):
         self.episode_bit_rate_requested = 0
         self.episode_bit_rate_provisioned = 0
@@ -836,6 +836,43 @@ def least_congested_path_first_fit(env: RMSAEnv) -> Tuple[int, int]:
         ]
     ):
         if path.hops <= min_hop + 1 and ini_slot != env.topology.graph["num_spectrum_resources"]:
+                env.topology.graph["num_spectrum_resources"] 
+                no_free_path = 1000000
+                for nodei in range(path.hops):
+                    linksFreeSlots = np.sum(env.get_available_slots_link(path, nodei, nodei+1))
+                    if  linksFreeSlots < no_free_path:
+                        no_free_path = linksFreeSlots
+                if no_free_path > ini_slot:
+                    ini_slot = no_free_path
+                    pathID_ = idp
+                    selectedPath = path
+    num_slots = env.get_number_slots(selectedPath)
+    for initial_slot in range(
+        0, env.topology.graph["num_spectrum_resources"] - num_slots
+    ):
+        if env.is_path_free(selectedPath, initial_slot, num_slots):
+            action = (pathID_, initial_slot)
+            break  # breaks the loop for the initial slot
+    
+    return action
+
+
+def least_congested_path_KSP_first_fit(env: RMSAEnv) -> Tuple[int, int]:
+    max_free_slots = 0
+    action = (
+        env.topology.graph["k_paths"],
+        env.topology.graph["num_spectrum_resources"],
+    )
+    #min_hop = env.k_shortest_paths[env.current_service.source, env.current_service.destination][0].hops
+    ini_slot = -1
+    pathID_ = -1
+    selectedPath = None
+    for idp, path in enumerate(
+        env.k_shortest_paths[
+            env.current_service.source, env.current_service.destination
+        ]
+    ):
+        if ini_slot != env.topology.graph["num_spectrum_resources"]:
                 env.topology.graph["num_spectrum_resources"] 
                 no_free_path = 1000000
                 for nodei in range(path.hops):

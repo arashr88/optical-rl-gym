@@ -9,15 +9,16 @@ import numpy as np
 from optical_rl_gym.envs.rmcsa_env import (
     SimpleMatrixObservation,
     shortest_available_path_best_modulation_first_core_first_fit,
+    shortest_path_best_modulation_first_core_first_fit,
 )
 from optical_rl_gym.utils import evaluate_heuristic, random_policy
 
-load = 250
+load = 50
 logging.getLogger("rmsaenv").setLevel(logging.INFO)
 
 seed = 20
 episodes = 10
-episode_length = 1000
+episode_length = 100000
 num_spatial_resources = 7
 worst_xt = -84.7
 
@@ -40,14 +41,27 @@ env_args = dict(
     seed=10,
     allow_rejection=True,
     load=load,
-    mean_service_holding_time=25,
+    mean_service_holding_time= 3600,
     episode_length=episode_length,
-    num_spectrum_resources=64,
+    num_spectrum_resources=128,
     num_spatial_resources=num_spatial_resources,
     worst_xt=worst_xt,
 )
 
 print("STR".ljust(5), "REW".rjust(7), "STD".rjust(7))
+
+env_sap = gym.make("RMCSA-v0", **env_args)
+mean_reward_sap, std_reward_sap = evaluate_heuristic(
+    env_sap,
+    shortest_path_best_modulation_first_core_first_fit,
+    n_eval_episodes=episodes,
+    loaded_model = model,
+)
+print('SAP-FF:'.ljust(8), f'{mean_reward_sap:.4f}  {std_reward_sap:.4f}')
+print('\tBit rate blocking:', (env_sap.episode_bit_rate_requested - env_sap.episode_bit_rate_provisioned) / env_sap.episode_bit_rate_requested)
+print('\tRequest blocking:', (env_sap.episode_services_processed - env_sap.episode_services_accepted) / env_sap.episode_services_processed)
+print("Throughput:", env_sap.topology.graph["throughput"])
+
 
 init_env = gym.make("RMCSA-v0", **env_args)
 env_rnd = SimpleMatrixObservation(init_env)

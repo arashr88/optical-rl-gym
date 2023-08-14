@@ -103,26 +103,36 @@ def random_policy(env):
 def evaluate_heuristic(
     env: "OpticalNetworkEnv",
     heuristic,
-    n_eval_episodes=10,
+    n_eval_episodes=30,
     render=False,
     callback=None,
     reward_threshold=None,
     return_episode_rewards=False,
     seeds=None,
+    loaded_model = None,
 ):
     episode_rewards, episode_lengths = [], []
     blocking = []
     BW_blocking = []
     for cnt in range(n_eval_episodes):
-        _ = env.reset()
+        observ = env.reset()
         env.rand_seed = 1#seeds[cnt] 
         done, _ = False, None
         episode_reward = 0.0
         episode_length = 0
         while not done:
-            action = heuristic(env)
-            _, reward, done, _, info = env.step(action)
+            if loaded_model == None:
+                print("*********************************Bug")
+                #action = heuristic(env)
+                break
+            else:
+                action, _ = loaded_model.predict(observ)
+            #obs2 = observ[0]
+            observ , reward, done, info = env.step(action)
             episode_reward += reward
+            #print(action)
+            # if reward == -1 :
+            #     print('here')
             if callback is not None:
                 callback(locals(), globals())
             episode_length += 1
@@ -130,8 +140,8 @@ def evaluate_heuristic(
                 env.render()
             if done:
                 # print(info)
-                blocking.append(info['service_blocking_rate'])
-                BW_blocking.append(info['bit_rate_blocking_rate'])
+                blocking.append(info[0]['service_blocking_rate'])
+                BW_blocking.append(info[0]['bit_rate_blocking_rate'])
         episode_rewards.append(episode_reward)
         episode_lengths.append(episode_length)
     
@@ -148,4 +158,4 @@ def evaluate_heuristic(
         )
     if return_episode_rewards:
         return episode_rewards, episode_lengths
-    return mean_reward, std_reward, mean_blocking, mean_BW_blocking
+    return mean_reward, std_reward, mean_blocking, mean_BW_blocking, info

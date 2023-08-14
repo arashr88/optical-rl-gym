@@ -178,20 +178,32 @@ class RLRMCSAEnv(OpticalNetworkEnv):
             ),
             dtype=int,
         )
-        self.action_space = gym.spaces.MultiDiscrete(
-            (
-                self.k_paths + self.reject_action,
-                len(self.modulation_formats),
-                self.num_spatial_resources + self.reject_action,
-                self.num_spectrum_resources + self.reject_action,
-            )
+        """
+                self.action_space = gym.spaces.Discrete(
+            
+                (self.k_paths + self.reject_action) * 
+                len(self.modulation_formats) *
+                (self.num_spatial_resources + self.reject_action) *
+                (self.num_spectrum_resources + self.reject_action) 
+        
         )
-        self.observation_space = gym.spaces.Dict(
-            {
-                "topology": gym.spaces.Discrete(10),
-                "current_service": gym.spaces.Discrete(10),
-            }
+        self.observation_space = gym.spaces.Box(low=0, high=1, shape=(self.num_spatial_resources , self.topology.number_of_edges(), self.num_spectrum_resources  ), dtype=np.uint8)
+        """
+        self.action_space = gym.spaces.Discrete(
+            
+                (self.k_paths + self.reject_action) * 
+                len(self.modulation_formats) *
+                (self.num_spatial_resources + self.reject_action) *
+                (self.num_spectrum_resources + self.reject_action) 
+        
         )
+        self.observation_space = gym.spaces.Box(low=0, high=1, shape=(self.k_paths + self.reject_action, self.num_spatial_resources , self.num_spectrum_resources  ), dtype=np.uint8)
+        # self.observation_space = gym.spaces.Dict(
+        #     {
+        #         "topology": gym.spaces.Discrete(10),
+        #         "current_service": gym.spaces.Discrete(10),
+        #     }
+        # )
         self.action_space.seed(self.rand_seed)
         self.observation_space.seed(self.rand_seed)
 
@@ -209,10 +221,10 @@ class RLRMCSAEnv(OpticalNetworkEnv):
     def step(self, action: Tuple[int, int, int, int]):
         # Compute statistics for analysis
         path, modulation, core, initial_slot = (
-            action[0],
-            action[1],
-            action[2],
-            action[3],
+            action % (self.k_paths + self.reject_action),
+            (action // (self.k_paths + self.reject_action)) % len(self.modulation_formats),
+            (action // ((self.k_paths + self.reject_action) * len(self.modulation_formats))) % (self.num_spatial_resources + self.reject_action) ,
+            (action // ((self.k_paths + self.reject_action) * len(self.modulation_formats) * (self.num_spatial_resources + self.reject_action) )) % (self.num_spectrum_resources + self.reject_action) 
         )
 
         # tracking actions
@@ -335,7 +347,6 @@ class RLRMCSAEnv(OpticalNetworkEnv):
             self.observation(),
             reward,
             self.episode_services_processed == self.episode_length,
-            False,
             info,
         )
 
@@ -882,6 +893,57 @@ class RLRMCSAEnv(OpticalNetworkEnv):
         # Worst aggregate intercore XT
         worst_xt = self.worst_crosstalks_by_core.get(num_spatial_resources)
         return worst_xt
+    
+    def observation(self):
+        """
+        source_destination_tau = np.zeros((2, self.topology.number_of_nodes()))
+        min_node = min(
+            self.current_service.source_id, self.current_service.destination_id
+        )
+        max_node = max(
+            self.current_service.source_id, self.current_service.destination_id
+        )
+        source_destination_tau[0, min_node] = 1
+        source_destination_tau[1, max_node] = 1
+        spectrum_obs = copy.deepcopy(self.topology.graph["available_slots"])
+        return np.concatenate(
+            (
+                source_destination_tau.reshape(
+                    (1, np.prod(source_destination_tau.shape))
+                ),
+                spectrum_obs.reshape((1, np.prod(spectrum_obs.shape))),
+            ),
+            axis=1,
+        ).reshape(self.observation_space.shape)
+        """
+        spectrum_obs = np.ones( ( self.k_paths, self.num_spatial_resources * self.num_spectrum_resources), dtype=int )
+        for idp, path in enumerate(
+            self.k_shortest_paths[
+                self.current_service.source, self.current_service.destination
+            ]
+            ): 
+            for core in range(self.num_spatial_resources):
+                for i in range(len(path.node_list) - 1):
+                    for si in range(
+                        0, self.num_spectrum_resources
+                    ):
+                        spectrum_obs[idp][core*(self.num_spectrum_resources) + si] = spectrum_obs[idp][core*(self.num_spectrum_resources) + si] &  self.topology.graph["available_slots"][core][self.topology[path.node_list[i]][path.node_list[i + 1]]["id"]][si]
+        
+        return np.concatenate(
+            (
+                spectrum_obs
+            ),
+            axis=0,
+        ).reshape(self.observation_space.shape)
+        """
+        spectrum_obs = copy.deepcopy(self.topology.graph["available_slots"])
+        return np.concatenate(
+            (
+                spectrum_obs
+            ),
+            axis=1,
+        ).reshape(self.observation_space.shape)
+        """
 
 
 def shortest_available_path_best_modulation_first_core_first_fit(env: RLRMCSAEnv) -> int:
@@ -962,6 +1024,7 @@ class SimpleMatrixObservation(gym.ObservationWrapper):
         self.action_space = env.action_space
 
     def observation(self, observation):
+        """
         source_destination_tau = np.zeros((2, self.env.topology.number_of_nodes()))
         min_node = min(
             self.env.current_service.source_id, self.env.current_service.destination_id
@@ -978,6 +1041,34 @@ class SimpleMatrixObservation(gym.ObservationWrapper):
                     (1, np.prod(source_destination_tau.shape))
                 ),
                 spectrum_obs.reshape((1, np.prod(spectrum_obs.shape))),
+            ),
+            axis=1,
+        ).reshape(self.observation_space.shape)
+        
+        spectrum_obs = copy.deepcopy(self.topology.graph["available_slots"])
+        return np.concatenate(
+            (
+                spectrum_obs
+            ),
+            axis=1,
+        ).reshape(self.observation_space.shape)
+        """
+        spectrum_obs = np.ones( ( self.k_paths, self.num_spatial_resources * self.num_spectrum_resources), dtype=int )
+        for idp, path in enumerate(
+            self.k_shortest_paths[
+                self.current_service.source, self.current_service.destination
+            ]
+            ): 
+            for core in range(self.num_spatial_resources):
+                for i in range(len(path.node_list) - 1):
+                    for si in range(
+                        0, self.num_spectrum_resources
+                    ):
+                        spectrum_obs[idp][core*(self.num_spectrum_resources + si)] = spectrum_obs[idp][core*(self.num_spectrum_resources + si)] &  self.topology.graph["available_slots"][core][self.topology[path.node_list[i]][path.node_list[i + 1]]["id"]][si]
+        
+        return np.concatenate(
+            (
+                spectrum_obs
             ),
             axis=1,
         ).reshape(self.observation_space.shape)

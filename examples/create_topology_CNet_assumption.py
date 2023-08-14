@@ -114,9 +114,9 @@ def get_topology(file_name, topology_name, modulations, k_paths=5):
 
 if __name__ == "__main__":
     # default values
-    k_paths = 10
-    topology_file = "nsfnet_chen.txt"
-    #topology_file = '/home/arash/git/optical-rl-gym/examples/topologies/europe_network.txt'
+    k_paths = 5
+    #topology_file = "nsfnet_chen.txt"
+    topology_file = '/home/arash/git/optical-rl-gym/examples/topologies/europe_network.txt'
 
     parser = argparse.ArgumentParser()
     parser.add_argument(

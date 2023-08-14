@@ -1,0 +1,6 @@
+gym
+matplotlib
+networkx
+stable_baselines3
+numpy
+json

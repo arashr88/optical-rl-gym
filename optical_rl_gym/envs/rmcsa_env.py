@@ -37,8 +37,8 @@ class RMCSAEnv(OpticalNetworkEnv):
         modulation_formats=None,
         worst_xt=None,
         node_request_probabilities=None,
-        bit_rate_selection: str = "continuous",
-        bit_rates: Sequence = [10, 40, 100],
+        bit_rate_selection: str = "discrete",
+        bit_rates: Sequence = [40, 100, 400],
         bit_rate_probabilities: Optional[np.array] = None,
         bit_rate_lower_bound=25,
         bit_rate_higher_bound=100,
@@ -335,7 +335,6 @@ class RMCSAEnv(OpticalNetworkEnv):
             self.observation(),
             reward,
             self.episode_services_processed == self.episode_length,
-            False,
             info,
         )
 
@@ -379,6 +378,7 @@ class RMCSAEnv(OpticalNetworkEnv):
             (current_modulation.inband_xt - self.worst_xt - 4) / 10
         )  # Eq. (2) and -4 for penalty margin
 
+        # if path_length < lmax_xt and path_length < lmax_snr:
         if path_length < lmax_xt and path_length < lmax_snr:
             return True
         else:
@@ -420,6 +420,7 @@ class RMCSAEnv(OpticalNetworkEnv):
                     ] += 1
 
                     # we build the histogram of slots requested assuming the shortest path
+                    """"
                     slots = self.get_number_slots(
                         self.k_shortest_paths[
                             self.current_service.source,
@@ -427,7 +428,7 @@ class RMCSAEnv(OpticalNetworkEnv):
                         ][0]
                     )
                     self.episode_slots_requested_histogram[slots] += 1
-
+                    """
             return self.observation()
 
         super().reset()
@@ -735,9 +736,11 @@ class RMCSAEnv(OpticalNetworkEnv):
             self.episode_bit_rate_requested_histogram[bit_rate] += 1
 
             # we build the histogram of slots requested assuming the shortest path
-            slots = self.get_number_slots(self.k_shortest_paths[src, dst][0])
+            """
+            slots = self.get_number_slots(self.k_shortest_paths[src, dst][0], self.modulation_formats)
             self.slots_requested_histogram[slots] += 1
             self.episode_slots_requested_histogram[slots] += 1
+            """
 
     def _get_route_slot_id(self, action: int) -> Tuple[int, int]:
         """
@@ -911,6 +914,37 @@ def shortest_available_path_best_modulation_first_core_first_fit(env: RMCSAEnv) 
         env.topology.graph["num_spectrum_resources"],
     )
 
+def shortest_path_best_modulation_first_core_first_fit(env: RMCSAEnv) -> int:
+    """
+    Algorithm for determining the shortest available first core first fit path
+
+    :param env: OpenAI Gym object containing RMCSA environment
+    :return: Cores, paths, and number of spectrum resources
+    """
+    for idp, path in enumerate(
+        env.k_shortest_paths[
+            env.current_service.source, env.current_service.destination
+        ]
+    ):
+        if idp == 0:
+            modulation = get_best_modulation_format(
+                            path.length, env.modulation_formats
+                        )
+            num_slots = env.get_number_slots(path, modulation)
+            # Iteration of core
+            for core in range(env.num_spatial_resources):
+                for initial_slot in range(
+                    0, env.topology.graph["num_spectrum_resources"] - num_slots
+                ):
+                    if env.is_path_free(path, core, initial_slot, num_slots):
+                        
+                        midx = env.modulation_formats.index(modulation)
+                        return (idp, midx, core, initial_slot)
+    return (
+        env.topology.graph["k_paths"],
+        env.num_spatial_resources,
+        env.topology.graph["num_spectrum_resources"],
+    )
 
 class SimpleMatrixObservation(gym.ObservationWrapper):
     def __init__(self, env: RMCSAEnv):
