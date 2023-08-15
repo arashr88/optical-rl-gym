@@ -95,10 +95,10 @@ for load in range(250, 301, 50):
         env_rnd = DummyVecEnv([lambda: env_rnd])
         if flag == False:
                 model = PPO("MlpPolicy", env_rnd, verbose=1)
-                model.save("deepq_LCP_PPO_new_reward" + current_time)
+                model.save("deepq_LCP_PPO_new_reward_" + current_time)
                 flag = True
         else:
-            model = PPO.load("deepq_LCP_PPO_new_reward" + current_time)
+            model = PPO.load("deepq_LCP_PPO_new_reward_" + current_time)
             model.set_env(env_rnd)
         mean_reward_rnd, std_reward_rnd, blocking, BW_blocking, info = evaluate_heuristic(
             env_rnd, least_congested_path_KSP_first_fit, n_eval_episodes=episodes, seeds = seeds, loaded_model = model

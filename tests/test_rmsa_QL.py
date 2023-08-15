@@ -95,7 +95,7 @@ for load in range(250, 301, 50):
                 model.save("deepq_LCP_DQN_new_reward_" + current_time)
                 flag = True
         else:
-            model = DQN.load("deepq_LCP_DQN_new_reward" + current_time)
+            model = DQN.load("deepq_LCP_DQN_new_reward_" + current_time)
             model.set_env(env_rnd)
         mean_reward_rnd, std_reward_rnd, blocking, BW_blocking, info = evaluate_heuristic(
             env_rnd, least_congested_path_KSP_first_fit, n_eval_episodes=episodes, seeds = seeds, loaded_model = model
