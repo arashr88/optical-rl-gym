@@ -5,6 +5,16 @@ import json
 import gym
 import matplotlib.pyplot as plt
 import numpy as np
+import datetime
+import sys
+import os
+
+# Get the directory containing the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Add the parent directory to the Python path
+parent_dir = os.path.abspath(os.path.join(script_dir, '..'))
+sys.path.append(parent_dir)
 
 from optical_rl_gym.envs.rmsa_QL_env import (
     SimpleMatrixObservation,
@@ -19,6 +29,9 @@ from stable_baselines3 import DQN, A2C, PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
 
 
+current_time2 = datetime.datetime.now()
+current_time = current_time2.strftime("%Y-%m-%d %H:%M:%S")
+
 class NumpyArrayEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
@@ -31,18 +44,18 @@ class NumpyArrayEncoder(json.JSONEncoder):
     
     
 output = {}
-with open("data_PPO_load_new_reward.json", "w") as file:
+with open("data_PPO_load_new_reward_" + current_time + ".json", "w") as file:
     # Load the existing JSON data
     json.dump(output, file)
 
-for load in range(50, 801, 50):
+for load in range(250, 301, 50):
 #load = 300
 
     logging.getLogger("rmsaqlenv").setLevel(logging.INFO)
 
-    seed = 10
+    seed = 1000
     episodes = 1
-    episode_length = 10000
+    episode_length = 1000
 
     monitor_files = []
     policies = []
@@ -82,10 +95,10 @@ for load in range(50, 801, 50):
         env_rnd = DummyVecEnv([lambda: env_rnd])
         if flag == False:
                 model = PPO("MlpPolicy", env_rnd, verbose=1)
-                model.save("deepq_LCP_PPO_new_reward")
+                model.save("deepq_LCP_PPO_new_reward" + current_time)
                 flag = True
         else:
-            model = PPO.load("deepq_LCP_PPO_new_reward")
+            model = PPO.load("deepq_LCP_PPO_new_reward" + current_time)
             model.set_env(env_rnd)
         mean_reward_rnd, std_reward_rnd, blocking, BW_blocking, info = evaluate_heuristic(
             env_rnd, least_congested_path_KSP_first_fit, n_eval_episodes=episodes, seeds = seeds, loaded_model = model
@@ -98,7 +111,7 @@ for load in range(50, 801, 50):
                         'info' : info,
 
         }})
-        with open("data_PPO_load_new_reward.json", "w") as file:
+        with open("data_PPO_load_new_reward_" + current_time + ".json", "w") as file:
         # Write the updated data back to the file
             json.dump(output, file, indent=4, cls=NumpyArrayEncoder)
     
