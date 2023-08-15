@@ -29,7 +29,7 @@ from stable_baselines3 import DQN, A2C, PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
 
 current_time2 = datetime.datetime.now()
-current_time = current_time2.strftime("%Y-%m-%d %H:%M:%S")
+current_time = "e^4_2023-08-15" #current_time2.strftime("%Y-%m-%d %H:%M:%S")
 class NumpyArrayEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
