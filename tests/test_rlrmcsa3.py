@@ -5,7 +5,15 @@ import pickle
 import gym
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
+import os
 
+# Get the directory containing the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Add the parent directory to the Python path
+parent_dir = os.path.abspath(os.path.join(script_dir, '..'))
+sys.path.append(parent_dir)
 from optical_rl_gym.envs.rlrmcsa_env import (
     SimpleMatrixObservation,
     shortest_available_path_best_modulation_first_core_first_fit,
