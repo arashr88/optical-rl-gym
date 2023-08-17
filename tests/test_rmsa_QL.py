@@ -29,7 +29,7 @@ from stable_baselines3 import DQN, A2C, PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
 
 current_time2 = datetime.datetime.now()
-current_time = "e^4_2023-08-15" #current_time2.strftime("%Y-%m-%d %H:%M:%S")
+current_time = "e^4_2023-08-17" #current_time2.strftime("%Y-%m-%d %H:%M:%S")
 class NumpyArrayEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
@@ -40,78 +40,91 @@ class NumpyArrayEncoder(json.JSONEncoder):
             return float(obj)  # Convert standalone float32 elements to regular float
         return json.JSONEncoder.default(self, obj)
     
-    
-output = {}
-with open("data_DQN_load_new_reward_" + current_time + ".json", "w") as file:
-    # Load the existing JSON data
-    json.dump(output, file)
+learning_rates = [0.001, 0.0005, 0.0001]
+target_update_freqs = [1000, 2000, 3000]
+exploration_fractions = [0.1, 0.2, 0.3]
 
-for load in range(250, 301, 50):
-#load = 300
 
-    logging.getLogger("rmsaqlenv").setLevel(logging.INFO)
+for lr in learning_rates:
+    for target_update_freq in target_update_freqs:
+        for exploration_fraction in exploration_fractions:
+            flag = False
+            output = {}
+            with open("data_DQN_load_lr_" +  str (lr) +"_tuf_" + str (target_update_freq) + "_ef_" + str (exploration_fraction) + "_new_reward_" + current_time + ".json", "w") as file:
+                # Load the existing JSON data
+                json.dump(output, file)
+            for load in range(250, 301, 50):
+            #load = 300
 
-    seed = 1000
-    episodes = 1
-    episode_length = 1000
+                logging.getLogger("rmsaqlenv").setLevel(logging.INFO)
 
-    monitor_files = []
-    policies = []
+                seed = 1000
+                episodes = 1
+                episode_length = 1000
 
-    # topology_name = 'gbn'
-    # topology_name = 'nobel-us'
-    # topology_name = 'germany50'
-    # with open(
-    #     os.path.join( "examples", "topologies", "nsfnet_chen_5-paths_6-modulations.h5"), "rb"
-    # ) as f:
-    #     topology = pickle.load(f)
-    output.update({load:{}})
-    flag = False
-    for seeds_cnt in range(seed):
-        with open(
-            os.path.join( "examples", "topologies", "europe_network_5-paths_1-modulations.h5"), "rb"
-        ) as f:
-            topology = pickle.load(f)
-        print("Erlang:", load, "    seed:  ", seeds_cnt)
-        env_args = dict(
-            topology=topology,
-            seed=seeds_cnt,
-            allow_rejection=False,
-            load=load,
-            mean_service_holding_time=3600,
-            episode_length=episode_length,
-            num_spectrum_resources=256,
-            bit_rate_selection="discrete",
-        )
+                monitor_files = []
+                policies = []
 
-        print("STR".ljust(5), "REW".rjust(7), "STD".rjust(7))
-        seeds = [seeds_cnt]#list(range(0,episodes,1))
+                # topology_name = 'gbn'
+                # topology_name = 'nobel-us'
+                # topology_name = 'germany50'
+                # with open(
+                #     os.path.join( "examples", "topologies", "nsfnet_chen_5-paths_6-modulations.h5"), "rb"
+                # ) as f:
+                #     topology = pickle.load(f)
+                output.update({load:{}})
+                
+                for seeds_cnt in range(seed):
+                    with open(
+                        os.path.join( "examples", "topologies", "europe_network_5-paths_1-modulations.h5"), "rb"
+                    ) as f:
+                        topology = pickle.load(f)
+                    print("Erlang:", load, "    seed:  ", seeds_cnt)
+                    env_args = dict(
+                        topology=topology,
+                        seed=seeds_cnt,
+                        allow_rejection=False,
+                        load=load,
+                        mean_service_holding_time=3600,
+                        episode_length=episode_length,
+                        num_spectrum_resources=256,
+                        bit_rate_selection="discrete",
+                    )
 
-        init_env = gym.make("RMSA-QL-v0", **env_args)
-        env_rnd = SimpleMatrixObservation(init_env)
-        env_rnd = DummyVecEnv([lambda: env_rnd])
-        if flag == False:
-                model = DQN("MlpPolicy", env_rnd, verbose=1)
-                model.save("deepq_LCP_DQN_new_reward_" + current_time)
-                flag = True
-        else:
-            model = DQN.load("deepq_LCP_DQN_new_reward_" + current_time)
-            model.set_env(env_rnd)
-        mean_reward_rnd, std_reward_rnd, blocking, BW_blocking, info = evaluate_heuristic(
-            env_rnd, least_congested_path_KSP_first_fit, n_eval_episodes=episodes, seeds = seeds, loaded_model = model
-        )
-        output[load].update({seeds_cnt:{
-                        'request_blocking': blocking,
-                        'BW_Blocking': BW_blocking,
-                        'mean_reward': mean_reward_rnd,
-                        'std_reward': std_reward_rnd,
-                        'info' : info,
+                    print("STR".ljust(5), "REW".rjust(7), "STD".rjust(7))
+                    seeds = [seeds_cnt]#list(range(0,episodes,1))
 
-        }})
-        with open("data_DQN_load_new_reward_" + current_time + ".json", "w") as file:
-        # Write the updated data back to the file
-            json.dump(output, file, indent=4, cls=NumpyArrayEncoder)
-  
+                    init_env = gym.make("RMSA-QL-v0", **env_args)
+                    env_rnd = SimpleMatrixObservation(init_env)
+                    env_rnd = DummyVecEnv([lambda: env_rnd])
+
+                    if flag == False:
+                            model = DQN("MlpPolicy", 
+                                        env_rnd, 
+                                        verbose=1,
+                                        learning_rate=lr,
+                                        target_update_interval=target_update_freq,
+                                        exploration_fraction=exploration_fraction)
+                            model.save("deepq_LCP_DQN_lr_" + str (lr) +"_tuf_" + str (target_update_freq) + "_ef_" + str (exploration_fraction) +"_new_reward_" + current_time)
+                            flag = True
+                    else:
+                        model = DQN.load("deepq_LCP_DQN_lr_" + str (lr) +"_tuf_" + str (target_update_freq) + "_ef_" + str (exploration_fraction) +"_new_reward_" + current_time)
+                        model.set_env(env_rnd)
+                    mean_reward_rnd, std_reward_rnd, blocking, BW_blocking, info = evaluate_heuristic(
+                        env_rnd, least_congested_path_KSP_first_fit, n_eval_episodes=episodes, seeds = seeds, loaded_model = model
+                    )
+                    output[load].update({seeds_cnt:{
+                                    'request_blocking': blocking,
+                                    'BW_Blocking': BW_blocking,
+                                    'mean_reward': mean_reward_rnd,
+                                    'std_reward': std_reward_rnd,
+                                    'info' : info,
+
+                    }})
+                    with open("data_DQN_load_lr_" +  str (lr) +"_tuf_" + str (target_update_freq) + "_ef_" + str (exploration_fraction) + "_new_reward_" + current_time + ".json", "w") as file:
+                    # Write the updated data back to the file
+                        json.dump(output, file, indent=4, cls=NumpyArrayEncoder)
+        
 """
 print("Rnd:".ljust(8), f"{mean_reward_rnd:.4f}  {std_reward_rnd:>7.4f}")
 print(
