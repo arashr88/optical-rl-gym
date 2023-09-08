@@ -27,9 +27,10 @@ from optical_rl_gym.envs.rmsa_QL_env import (
 from optical_rl_gym.utils import evaluate_heuristic, random_policy
 from stable_baselines3 import DQN, A2C, PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
+from stable_baselines3.common.buffers import ReplayBuffer
 
 current_time2 = datetime.datetime.now()
-current_time = "e^4_2023-08-17" #current_time2.strftime("%Y-%m-%d %H:%M:%S")
+current_time = "e^4_2023-09-07" #current_time2.strftime("%Y-%m-%d %H:%M:%S")
 class NumpyArrayEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.ndarray):
@@ -40,11 +41,12 @@ class NumpyArrayEncoder(json.JSONEncoder):
             return float(obj)  # Convert standalone float32 elements to regular float
         return json.JSONEncoder.default(self, obj)
     
-learning_rates = [0.001, 0.0005, 0.0001]
-target_update_freqs = [1000, 2000, 3000]
-exploration_fractions = [0.1, 0.2, 0.3]
+learning_rates = [0.001] #[0.001, 0.0005, 0.0001]
+target_update_freqs = [3000] #[1000, 2000, 3000]
+exploration_fractions = [0.2] #[0.1, 0.2, 0.3]
 
-
+buffer_size = 1000 * 1000
+batch_size = 32
 for lr in learning_rates:
     for target_update_freq in target_update_freqs:
         for exploration_fraction in exploration_fractions:
@@ -53,7 +55,7 @@ for lr in learning_rates:
             with open("data_DQN_load_lr_" +  str (lr) +"_tuf_" + str (target_update_freq) + "_ef_" + str (exploration_fraction) + "_new_reward_" + current_time + ".json", "w") as file:
                 # Load the existing JSON data
                 json.dump(output, file)
-            for load in range(250, 301, 50):
+            for load in range(250, 300, 50):
             #load = 300
 
                 logging.getLogger("rmsaqlenv").setLevel(logging.INFO)
@@ -97,14 +99,17 @@ for lr in learning_rates:
                     init_env = gym.make("RMSA-QL-v0", **env_args)
                     env_rnd = SimpleMatrixObservation(init_env)
                     env_rnd = DummyVecEnv([lambda: env_rnd])
-
+                    # replay_buffer =  ReplayBuffer(buffer_size, env_rnd.observation_space, env_rnd.action_space)
                     if flag == False:
                             model = DQN("MlpPolicy", 
                                         env_rnd, 
                                         verbose=1,
                                         learning_rate=lr,
                                         target_update_interval=target_update_freq,
-                                        exploration_fraction=exploration_fraction)
+                                        exploration_fraction=exploration_fraction,
+                                        buffer_size= buffer_size,  # Specify the buffer size
+                                        batch_size= batch_size,
+                                        replay_buffer_class = ReplayBuffer)
                             model.save("deepq_LCP_DQN_lr_" + str (lr) +"_tuf_" + str (target_update_freq) + "_ef_" + str (exploration_fraction) +"_new_reward_" + current_time)
                             flag = True
                     else:
