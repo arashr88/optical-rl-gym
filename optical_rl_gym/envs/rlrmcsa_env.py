@@ -334,7 +334,7 @@ class RLRMCSAEnv(OpticalNetworkEnv):
                     blocking_per_bit_rate[bit_rate] = 0.0
 
         # Get the value of the action
-        reward = self.reward()
+        reward = self.reward( core, initial_slot, slots)
         # Summarize computed statistics
         info = {
             "service_blocking_rate": (self.services_processed - self.services_accepted)
@@ -960,7 +960,17 @@ class RLRMCSAEnv(OpticalNetworkEnv):
             axis=1,
         ).reshape(self.observation_space.shape)
         """
-
+    
+    def reward(self, core, initial_slot, slots):
+        path = self.k_shortest_paths[
+                        self.current_service.source, self.current_service.destination
+                    ][0]
+                    
+        for nodei in range(path.hops):
+            self.topology.graph["available_slots"][core][self.topology[path.node_list[nodei]][path.node_list[nodei + 1]]["index"]]
+        
+        return (1 + np.exp( 4 * (num_slots / self.num_spectrum_resources )) )if self.current_service.accepted else -1
+    
 
 def shortest_available_path_best_modulation_first_core_first_fit(env: RLRMCSAEnv) -> int:
     """
